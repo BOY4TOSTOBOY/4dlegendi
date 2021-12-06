@@ -1,0 +1,25 @@
+@import "../../../assets/styles/constants.scss";
+
+.review-event {
+  &-page {
+    background: white;
+  }
+
+  //&-card {
+  //  padding: 3vh !important;
+  //}
+
+  &-title {
+    font-size: 3vh;
+  }
+
+  &-actions-panel {
+    padding-top: 3vh;
+
+    button {
+      font-size: 1.5vh !important;
+      padding: 1vh 2vh;
+      line-height: 2vh;
+    }
+  }
+}

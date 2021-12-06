@@ -1,0 +1,72 @@
+<h1 mat-dialog-title>
+  Войти
+</h1>
+<div mat-dialog-content>
+  <form
+          *ngIf="loginForm"
+          [formGroup]="loginForm"
+          (submit)="submitLoginForm()"
+  >
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>
+        Логин
+      </mat-label>
+      <input
+              matInput
+              placeholder="Введите логин..."
+              formControlName="username"
+              required
+      >
+      <mat-error
+              *ngIf="username.invalid"
+      >
+        {{getValidatorErrorMessage(username)}}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>
+        Пароль
+      </mat-label>
+      <input
+              matInput
+              placeholder="Введите пароль..."
+              [type]="isPasswordHidden ? 'password' : 'text'"
+              formControlName="password"
+              required
+      >
+      <button
+              mat-icon-button
+              matSuffix
+              color="primary"
+              type="button"
+              (click)="isPasswordHidden = !isPasswordHidden"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="isPasswordHidden">
+      </button>
+      <mat-error
+              *ngIf="password.invalid"
+      >
+        {{getValidatorErrorMessage(password)}}
+      </mat-error>
+    </mat-form-field>
+
+    <div class="reset-password-label" (click)="resetPassword()">
+      Забыли пароль?
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="8px">
+      <div fxFlex></div>
+      <button
+              mat-flat-button
+              color="primary"
+              type="submit"
+              [disabled]="loginForm.invalid"
+      >
+        Войти
+      </button>
+
+      <close-dialog-button [label]="'Отмена'"></close-dialog-button>
+    </div>
+  </form>
+</div>

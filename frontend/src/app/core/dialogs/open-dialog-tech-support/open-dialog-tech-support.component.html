@@ -1,0 +1,26 @@
+<form [formGroup]="questionForm">
+  <div>
+    <h2 class="heard"> Тех-поддержка </h2>
+    <p>Тема обращения</p>
+    <input type="text" formControlName="subject">
+
+    <div class="alert-message"
+         *ngIf="questionForm.controls['subject'].invalid && questionForm.controls['subject'].touched">
+      <p>Поле не может быть пустым</p>
+    </div>
+
+    <p>Текст обращения</p>
+    <textarea formControlName="text"></textarea>
+
+    <div class="alert-message"
+         *ngIf="questionForm.controls['text'].invalid && questionForm.controls['text'].touched">
+      <p>Поле не может быть пустым</p>
+    </div>
+  </div>
+
+  <div class="btn">
+    <button class="bn632-hover bn23" (click)="close()" >закрыть</button>
+
+    <button type="submit" class="bn632-hover bn23" (click)="submitPoolTechSupport()">отправить</button>
+  </div>
+</form>

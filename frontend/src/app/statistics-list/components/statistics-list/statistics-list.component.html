@@ -1,0 +1,70 @@
+<div
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxFill
+    class="review-event-page"
+>
+
+<table *ngFor="let static of staticList" class="mat-elevation-z8">
+    <ng-container matColumnDef="role_blogger">
+        <tr>
+            <th> Блогеров</th>
+            <th>  Экспертов</th>
+            <th>  Продавцов</th>
+            <th> Количество Пользователей </th>
+            <th> Количество Подписок</th>
+        </tr>
+    </ng-container>
+
+    <ng-container matColumnDef="number">
+        <tr>
+            <td> {{static.role_blogger}}</td>
+            <td> {{static.role_expert}}</td>
+            <td> {{static.role_seller}}</td>
+            <td> {{static.count_users}}</td>
+            <td> {{static.count_orders_all}}</td>
+        </tr>
+    </ng-container>
+</table>
+
+<!--Таблица Статистики в процентах-->
+
+    <table   class="statistics_percent">
+        <ng-container matColumnDef="text-table">
+            <div class="name-table">
+                <th class="template">Шаблон</th>
+                <th class="prosents">Одобренные</th>
+                <th class="totalAmount">Общее количество</th>
+            </div>
+        </ng-container>
+        <ng-container  *ngFor="let percent of  percentStatistics" class="table-static"  matColumnDef="role_blogger">
+<!--            <div>-->
+<!--                <td class="text">{{percent.text}}</td>-->
+<!--                <td class="positive">{{percent.count_true_ratings}}</td>-->
+<!--                <td class="all">{{percent.count_all_ratings}} </td>-->
+<!--            </div>-->
+            <div class="content-table">
+                <td class="template">{{percent.text}}</td>
+                <td class="prosents">{{percent.count_true_ratings}}</td>
+                <td class="totalAmount">{{percent.count_all_ratings}} </td>
+            </div>
+        </ng-container>
+    </table>
+    <!--        <mat-table  [dataSource]="dataSource" class="statistics_percent">
+
+        <ng-container matColumnDef="text">
+            <mat-header-cell *matHeaderCellDef> text </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.text }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="count_true_ratings">
+            <mat-header-cell *matHeaderCellDef> успех </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.count_true_ratings }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="count_all_ratings">
+            <mat-header-cell *matHeaderCellDef> всего одобрено </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{ element.count_all_ratings }} </mat-cell>
+        </ng-container>
+    </mat-table >-->
+</div>

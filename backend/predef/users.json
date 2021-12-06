@@ -1,0 +1,166 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$bdpmTqIOx8Kc$LfFKFVNHGNERpshcOQNTKjIV6MSsScTjJ6/yW9hQdD4=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-02-04T09:01:43.161Z",
+    "email": "admin@mail.ru",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$bdpmTqIOx8Kc$LfFKFVNHGNERpshcOQNTKjIV6MSsScTjJ6/yW9hQdD4=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "founder",
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-02-04T09:01:43.161Z",
+    "email": "admin2@mail.ru",
+    "groups": [],
+    "user_permissions": [],
+    "role_id": 1,
+    "count_orders": 10
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 1,
+  "fields": {
+    "question_id": 1,
+    "user_id": 2,
+    "text": "красивый"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 2,
+  "fields": {
+    "question_id": 1,
+    "user_id": 2,
+    "text": "богатый"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 3,
+  "fields": {
+    "question_id": 2,
+    "user_id": 2,
+    "text": "хороший"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 4,
+  "fields": {
+    "question_id": 2,
+    "user_id": 2,
+    "text": "прекрасный"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 5,
+  "fields": {
+    "question_id": 3,
+    "user_id": 2,
+    "text": "дом"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 6,
+  "fields": {
+    "question_id": 3,
+    "user_id": 2,
+    "text": "оружие"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 7,
+  "fields": {
+    "question_id": 4,
+    "user_id": 2,
+    "text": "потребители"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 8,
+  "fields": {
+    "question_id": 4,
+    "user_id": 2,
+    "text": "клиенты"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 9,
+  "fields": {
+    "question_id": 5,
+    "user_id": 2,
+    "text": "религия"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 10,
+  "fields": {
+    "question_id": 5,
+    "user_id": 2,
+    "text": "зарплата"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 11,
+  "fields": {
+    "question_id": 6,
+    "user_id": 2,
+    "text": "счастье"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 12,
+  "fields": {
+    "question_id": 6,
+    "user_id": 2,
+    "text": "золото"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 13,
+  "fields": {
+    "question_id": 7,
+    "user_id": 2,
+    "text": "глупые"
+  }
+},
+{
+  "model": "legending.answer",
+  "pk": 14,
+  "fields": {
+    "question_id": 7,
+    "user_id": 2,
+    "text": "злые"
+  }
+}
+]

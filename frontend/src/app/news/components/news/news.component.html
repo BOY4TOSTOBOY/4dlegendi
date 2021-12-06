@@ -1,0 +1,39 @@
+<div class="news">
+  <div class="list" *ngIf="getNewsList.value.length; else loadingEl">
+    <div class="spinner">
+      <mat-spinner *ngIf="isLoading" [diameter]="50"></mat-spinner>
+    </div>
+    <p class="textNews">Выберите тему дня</p>
+
+    <div class="list">
+      <div class="text" *ngFor="let element of getNewsList.value">
+        <div class="text__total">Всего слов {{element.elements.length < 4 ? element.elements.length : element.elements.length }}:&nbsp;</div>
+        <div class="texts">
+          {{ element.elements.length < 4 ? element.elements : (element.elements | slice:0:3)+'...'}}
+        </div>
+        <div>
+          <mat-icon
+            class="icon"
+            title="выбрать новость"
+            (click)="goToNews(element)">add_circle</mat-icon>
+
+          <mat-icon
+            class="icon"
+            title="редактировать"
+            (click)="editElement(element)">create</mat-icon>
+
+          <mat-icon
+            class="icon"
+            title="удалить "
+            (click)="deleteElement(element)">clear</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loadingEl> <p class="loading">Нет новости</p></ng-template>
+
+  <div class="buttons">
+    <a (click)="goToCreateNews()"><button class="btn">Добавить</button></a>
+  </div>
+</div>

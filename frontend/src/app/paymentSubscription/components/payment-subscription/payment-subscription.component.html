@@ -1,0 +1,12 @@
+<ng-container>
+  <div class="payment">
+    <div class="name"> <h1>Выберите тариф</h1> </div>
+        <div  *ngFor="let pay of payment">
+            <!-- платежка -->
+            <a  class="pay" (click)="goToPay(pay.id )"> <div>{{pay?.text}}</div></a>
+        </div>
+   
+        <button class="pay"  (click)="goToPromoCode()"><div>Ввести Промокод</div></button>
+
+  </div>
+</ng-container>

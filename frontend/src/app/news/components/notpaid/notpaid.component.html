@@ -1,0 +1,12 @@
+<ng-container>
+  <div class="profile">
+    <div class="name" *ngIf="!payment.length"> <h1> для продолжения оплатите Pro версию</h1> </div>
+
+    <div class="name" *ngFor="let subscription of payment">
+        <h1> {{ subscription.date_end | date:'dd-MM-yyyy hh:mm a' }} </h1>
+    </div>
+      <!-- платежка -->
+      <a  class="pay" (click)="goToPay()"> <div>оплатить</div></a>
+    </div>
+
+</ng-container>

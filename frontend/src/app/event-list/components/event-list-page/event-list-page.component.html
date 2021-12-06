@@ -1,0 +1,88 @@
+
+<div class="event-list-page-container">
+	<div class="event-list-page-title">
+		Контент-план
+	</div>
+	<div
+			fxLayout="row"
+			fxLayoutAlign="space-between start"
+			class="full-width"
+	>
+		<mat-form-field    fxHide.xs
+				appearance="outline"
+				fxFlex="35%"
+		>
+			<mat-label>
+				Поиск
+			</mat-label>
+			<input
+					matInput
+					placeholder="Введите заголовок искомого ивента..."
+					[formControl]="searchQueryCtrl"
+			>
+			<button
+					*ngIf="searchQueryCtrl && searchQueryCtrl.value"
+					mat-button
+					matSuffix
+					mat-icon-button
+					aria-label="Clear"
+					(click)="searchQueryCtrl.setValue('')"
+			>
+				<mat-icon>close</mat-icon>
+			</button>
+		</mat-form-field>
+
+		<button
+				mat-flat-button
+				color="accent"
+				class="inline-button"
+				(click)="downloadContentPlan()"
+		>
+			Экспорт
+		</button>
+		<button
+				mat-flat-button
+				color="accent"
+				class="gopay"
+				(click)="goToPay()"
+		>
+			Купить подписку
+		</button>
+		<button
+				mat-flat-button
+				color="accent"
+				class="goreview"
+				(click)="goToReview()"
+		>
+			Продолжить одобрение
+		</button>
+
+
+	</div>
+
+	<div class="event-list-page-content">
+<!--		<ng-container *ngIf="events$ | async as events; else waitingTemplate">-->
+<!--			<event-list-table-->
+<!--					[source]="events"-->
+<!--					[(params)]="eventParams"-->
+<!--					(paramsChange)="getEvents()"-->
+<!--			></event-list-table>-->
+<!--		</ng-container>-->
+
+		<ng-container *ngIf="events$ | async as events; else waitingTemplate">
+			<event-list-table
+					[source]="events"
+					[(params)]="eventParams"
+					(paramsChange)="getEvents()"
+			></event-list-table>
+		</ng-container>
+
+		<ng-template #waitingTemplate>
+			<waiting-template></waiting-template>
+		</ng-template>
+		<ng-template *ngIf="!transitionToApprove">
+			<waiting-template></waiting-template>
+		</ng-template>
+	</div>
+
+</div>

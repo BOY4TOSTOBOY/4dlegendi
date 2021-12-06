@@ -1,0 +1,10 @@
+<div class="login-page-container" fxLayout="row" fxLayoutAlign="center center">
+<question-container
+  class="start-screen-card-container"
+  [currentQuestion]="currentQuestion"
+  [requiredLength]="currentQuestionObject?.min_answers"
+  [criteria]="currentQuestionObject?.criteria"
+  [errors]="errors"
+  (updatePollAnswer)="acceptPollAnswer($event)"
+></question-container>
+</div>

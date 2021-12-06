@@ -1,0 +1,38 @@
+@import "../../../../assets/styles/constants.scss";
+
+.events-list-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: $mat-light-gray;
+
+  .event-item-container {
+    line-height: 48px;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $mat-extra-light-primary;
+      transition: all 0.3s ease;
+    }
+
+    .event-item-text-container {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .selected-event-item-container {
+    background: $mat-primary;
+    color: white;
+
+    &:hover {
+      background: $mat-dark-primary;
+      transition: all 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.login-page-container {
+  background: white;
+  overflow: hidden;
+  // background: #cfe6ec;
+
+  background-size: cover;
+  height: 100%;
+}
+.start-screen-card-container{
+  height: calc(100% - 30%);
+}
+@media (max-width: 414px) {
+  .poll-card-container {
+    border-radius: 20px;
+  }
+  .login-page-container {
+    overflow: hidden;
+
+    background: white;
+
+    background-size: cover;
+    height: 100%;
+
+    .start-screen-card-container {
+      width: 90%;
+      height: 94%;
+      border-radius: 20px;
+    }
+  }
+  .poll-card-container[_ngcontent-c3] {
+    width: calc(100% - 30px);
+    height: calc(100% - 30%);
+    border-radius: 12px;
+  }
+  .mat-card {
+    border-radius: 10px;
+  }
+  .start-screen-card-container{
+    height: calc(100% - 30%);
+  }
+}

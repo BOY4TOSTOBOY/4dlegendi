@@ -1,0 +1,43 @@
+<div class="login-page-container" fxLayout="row" fxLayoutAlign="center center">
+  <ng-container *ngIf="isQuestionsDownloaded">
+    <greeting-screen-container
+      class="start-screen-card-container"
+      *ngIf="state === stateOptions.NotStarted"
+      [isFirstPoll]="!pollAnswersList.length"
+      (startPollEvent)="chooseRole()"
+      (goToLoginEvent)="goToLogin()"
+    ></greeting-screen-container>
+
+    <ng-container *ngIf="state === stateOptions.RoleChoose">
+      <role (startPollEvent)="startPoll($event)"></role>
+    </ng-container>
+
+    <ng-container *ngIf="state === stateOptions.Questions">
+      <question-container
+        class="start-screen-card-container"
+        [currentQuestion]="currentQuestionObject"
+        [requiredLength]="currentQuestionObject?.min_answers"
+        [criteria]="currentQuestionObject?.criteria"
+        [errors]="errors"
+        (updatePollAnswer)="acceptPollAnswer($event)"
+      ></question-container>
+    </ng-container>
+
+    <ng-container *ngIf="state === stateOptions.Completed">
+      <finish-panel
+        (goToAuthPageEvent)="goToAuthPage()"
+        (goToProceedEvent)="goToProceed()"
+      ></finish-panel>
+    </ng-container>
+
+    <authorization-container
+      *ngIf="state === stateOptions.Login"
+      [questionsCount]="pollQuestionsList ? pollQuestionsList.length : 0"
+      class="start-screen-card-container"
+    ></authorization-container>
+  </ng-container>
+
+  <ng-container *ngIf="!isQuestionsDownloaded">
+    <waiting-template></waiting-template>
+  </ng-container>
+</div>

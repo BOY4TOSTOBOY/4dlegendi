@@ -1,0 +1,63 @@
+@import "../../../../assets/styles/constants.scss";
+
+.dashboard-page-container {
+  height: 100%;
+  overflow: auto;
+  padding: 24px;
+
+  .dashboard-page-header {
+    color: rgba(0, 0, 0, 0.8);
+
+    .dashboard-current-entity-label {
+      font-size: 26pt;
+    }
+  }
+
+  .dashboard-day-info-container {
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .selected-date-mode {
+    background: $mat-primary;
+    color: white;
+  }
+
+  .poll-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    &-label {
+      font-size: 20pt;
+    }
+
+    &-content {
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+
+.custom-cal-header {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 600;
+  padding: 4px;
+}
+@media (max-width: 414px) {
+  .dashboard-page-container {
+    overflow: hidden;
+
+    //background-image: url(/assets/images/login-bg.jpg);
+    background-size: cover;
+    height: 100%;
+
+    .start-screen-card-container {
+      height: calc(100% - 30%);
+    }
+  }
+}

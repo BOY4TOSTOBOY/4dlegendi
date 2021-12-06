@@ -1,0 +1,79 @@
+table {
+  border-collapse: collapse; /* Отображать двойные линии как одинарные */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+th {
+  background: #ccc; /* Цвет фона */
+  text-align: left; /* Выравнивание по левому краю */
+}
+.name-table{
+  max-width: 1280px;
+  margin-top: 5%;
+}
+.template{
+
+  width: 958px;
+  max-width: 900px;
+  height: 50px;
+}
+td, th {
+  border: 1px solid #800; /* Параметры границы */
+  padding: 8px; /* Поля в ячейках */
+}
+.table-static{
+  display: flex;
+  flex-direction: column;
+}
+.content-table{
+  display: flex;
+}
+
+.aaa{
+  display: block;
+}
+.text{
+  width: 958px;
+  height: 60px;
+}
+.statistics_percent{
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+.totalAmount{
+  height: 50px;
+  max-width: 160px;
+  width: 160px;
+}
+.prosents{
+  max-width: 160px;
+  width: 160px;
+  height: 50px;
+}
+.percent{
+  display: flex;
+
+}
+.tbody [_ngcontent-c8] {
+  max-height: 750px;
+}
+.shablon{
+  width: 721px;
+}
+.positive{
+  width: 110px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all{
+  width: 159px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

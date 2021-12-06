@@ -1,0 +1,34 @@
+<mat-card class="poll-card-container">
+  <mat-card-content
+    class="poll-card-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+  >
+    <question-panel
+      class="question-panel"
+      fxFlex="calc(50% - 30px)"
+      [currentQuestion]="currentQuestion"
+    >
+    </question-panel>
+
+    <div
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      class="full-width"
+      fxFlex="calc(50% - 30px)"
+    >
+      <answer-panel
+        class="answer-area"
+        [answers]="answers"
+        [errors]="errors"
+        [criteria]="criteria"
+        (answerRemoved)="removeAnswer($event)"
+        (answerAdded)="addAnswer($event)"
+        (updatePollAnswer)="addAnswers()"
+        [requiredLength]="requiredLength"
+        [currentQuestionObject] = "currentQuestion"
+      >
+      </answer-panel>
+    </div>
+  </mat-card-content>
+</mat-card>

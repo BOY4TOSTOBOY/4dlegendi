@@ -1,0 +1,49 @@
+
+<div *ngIf=" userProfile.date_end; else nodata " class="afterPay">
+  <mat-card class="poll-card-container" >
+    <mat-card-content
+      class="poll-card-content"
+      fxLayout="column"
+      fxLayoutGap="12px"
+      fxLayoutAlign="center center"
+    >
+      <div><h1>Спасибо за оплату!</h1></div>
+        <p> Благодарим вас за оплату. Подписка оформлена. В PRO версии вы можете ответить на все вопросы нашего сервиса, кликнув по кнопке</p>
+      <div
+        fxLayout="row"
+        fxLayoutGap="8px"
+        fxLayoutAlign="center center"
+        class="buttons"
+      >
+
+        <a (click)="goMain()"><button class="btn" mat-stroked-button>Продолжить</button></a>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<ng-template #nodata>
+    <div class="afterPay">
+        <mat-card class="poll-card-container">
+        <mat-card-content
+                class="poll-card-content"
+                fxLayout="column"
+                fxLayoutGap="12px"
+                fxLayoutAlign="center center"
+        >
+            <div><h1>оплата не прошла попробуйте снова</h1></div>
+            <div
+                    fxLayout="row"
+                    fxLayoutGap="8px"
+                    fxLayoutAlign="center center"
+                    class="buttons"
+            >
+                <a (click)="goPay()"><button class="btn" mat-stroked-button>Возврат к системе</button></a
+                >
+            </div>
+        </mat-card-content>
+    </mat-card>
+    </div>
+</ng-template>
+
+

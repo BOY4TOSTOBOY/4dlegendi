@@ -1,0 +1,46 @@
+<ng-container *ngIf="currentEvent && isTitlesDownloaded && isTemplatesDownloaded">
+  <div mat-dialog-title>Карточка ивента</div>
+
+  <event-form
+          [currentEvent]="currentEvent"
+          [titles]="titleList"
+          [templates]="templateList"
+          (eventFormChanges)="updateEventForm($event)"
+  ></event-form>
+
+  <div
+          mat-dialog-actions
+          fxLayout="row"
+          fxLayoutGap="8px"
+          [fxLayoutAlign]="currentEvent.id ? 'space-between center' : 'end center'"
+  >
+    <button
+            *ngIf="currentEvent.id"
+            mat-stroked-button
+            color="primary"
+            (click)="getEventTemplate()"
+    >
+      <mat-icon>
+        get_app
+      </mat-icon>
+      Скачать шаблон
+    </button>
+
+    <div
+            fxLayout="row"
+            fxLayoutGap="9px"
+    >
+      <save-dialog-button
+              [disabled]="isFormInvalid"
+              [label]="'Сохранить'"
+              (onClick)="submitDialog()"
+      >
+      </save-dialog-button>
+      <close-dialog-button [label]="'Отмена'"></close-dialog-button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!currentEvent || !isTitlesDownloaded || !isTemplatesDownloaded">
+  <waiting-template></waiting-template>
+</ng-container>

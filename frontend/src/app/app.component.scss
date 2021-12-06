@@ -1,0 +1,22 @@
+.content-container {
+  height: calc(100% - 54px);
+  overflow: hidden;
+  overflow: scroll;
+  justify-content: center;
+  display: flex;
+  background: white;
+
+  align-items: center;
+}
+
+.with-sidebar {
+  margin: 54px 0 0 0;
+}
+
+.without-sidebar {
+  margin: 54px 0 0 0;
+}
+//ui-view {
+//  overflow-x: hidden;
+//}
+

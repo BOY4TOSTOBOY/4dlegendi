@@ -1,0 +1,23 @@
+
+<div  *ngIf="!isLoading" class="login-page-container" fxLayout="row" fxLayoutAlign="center center">
+    <ng-container >
+        <question-container
+                class="start-screen-card-container"
+                [currentQuestion]="currentQuestionObject"
+                [requiredLength]="currentQuestionObject?.min_answers"
+                [criteria]="currentQuestionObject?.criteria"
+                [errors]="errors"
+                (updatePollAnswer)="acceptPollAnswer($event)"
+
+        ></question-container>
+    </ng-container>
+</div>
+<div   class="login-page-container" fxLayout="row" fxLayoutAlign="center center" *ngIf="isLoading">
+    <ng-container class="spinner" >
+    <div>
+        Подождите пару секунд
+    </div>
+
+    <mat-spinner [diameter]="50"></mat-spinner>
+    </ng-container>
+</div>

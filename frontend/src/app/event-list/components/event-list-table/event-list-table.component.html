@@ -1,0 +1,67 @@
+<ng-container *ngIf="params && source && source.length">
+  <div class="event-list-table-container">
+    <table mat-table [dataSource]="source">
+      <ng-container matColumnDef="title" class="title">
+        <th mat-header-cell *matHeaderCellDef>Название</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.title }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="description" class="description">
+        <th mat-header-cell *matHeaderCellDef>Тип события</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.description?.text }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="comment" class="comment">
+        <th mat-header-cell *matHeaderCellDef>Комментарий</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.comment }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="start" class="start">
+        <th mat-header-cell *matHeaderCellDef>Планируемая дата публикации</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.start | formatDate }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+  <div fxHide.gt-xs>
+    <mat-paginator
+      [length]="params.paginatorOptions.length"
+      [pageSize]="params.paginatorOptions.limit"
+      [pageIndex]="
+        params.paginatorOptions.offset / params.paginatorOptions.limit
+      "
+      [showFirstLastButtons]="true"
+      (page)="paginatorClicked($event)"
+    >
+    </mat-paginator>
+  </div>
+  <div fxHide.xs>
+    <mat-paginator
+      [length]="params.paginatorOptions.length"
+      [pageSize]="params.paginatorOptions.limit"
+      [pageIndex]="
+        params.paginatorOptions.offset / params.paginatorOptions.limit
+      "
+      [pageSizeOptions]="[6, 10]"
+      [showFirstLastButtons]="true"
+      (page)="paginatorClicked($event)"
+    >
+    </mat-paginator>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="source && !source.length">
+  <div fxLayout="row" fxLayoutAlign="center center" fxFill>
+    Нет данных для отображения
+  </div>
+</ng-container>

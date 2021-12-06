@@ -1,0 +1,35 @@
+<div mat-dialog-title>
+  {{ data.title }}
+</div>
+
+<div mat-dialog-content>
+  <mat-form-field class="full-width">
+    <mat-label>
+      {{ data.inputLabel }}
+    </mat-label>
+    <input
+            matInput
+            type="text"
+            [placeholder]="data.placeholder"
+            [formControl]="email"
+            required
+    >
+    <mat-error *ngIf="email.invalid">
+      {{getErrorMessage()}}
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<div
+        mat-dialog-actions
+        fxLayout="row"
+        fxLayoutGap="8px"
+        fxLayoutAlign="end center"
+>
+  <save-dialog-button
+          [label]="data.saveButtonLabel"
+          [disabled]="email.invalid"
+          (onClick)="submit()"
+  ></save-dialog-button>
+  <close-dialog-button [label]="data.closeButtonLabel"></close-dialog-button>
+</div>

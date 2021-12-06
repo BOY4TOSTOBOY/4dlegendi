@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>
+  Установите email
+</h1>
+
+<form
+        *ngIf="emailForm"
+        [formGroup]="emailForm"
+        (submit)="onSubmit()"
+>
+  <mat-form-field
+          appearance="outline"
+          class="full-width"
+  >
+    <mat-label>
+      Email
+    </mat-label>
+    <input
+            matInput
+            formControlName="email"
+            placeholder="Введите email"
+            required
+    >
+    <mat-error
+            *ngIf="email.invalid"
+    >
+      {{getValidatorErrorMessage(email)}}
+    </mat-error>
+  </mat-form-field>
+
+  <div fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="end center">
+    <button
+            mat-flat-button
+            color="primary"
+            type="submit"
+    >
+      Сохранить
+    </button>
+    <button
+            mat-stroked-button
+            color="warn"
+            type="button"
+            mat-dialog-close
+    >
+      Отмена
+    </button>
+  </div>
+</form>

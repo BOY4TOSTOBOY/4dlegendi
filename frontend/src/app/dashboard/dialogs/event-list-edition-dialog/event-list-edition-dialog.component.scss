@@ -1,0 +1,15 @@
+.events-list-edition-dialog-container {
+  height: 100%;
+
+  .events-list-edition-dialog-content {
+    height: 326px;
+    overflow: hidden;
+
+    .events-list-item-container {
+      overflow: auto;
+      padding: 0 24px;
+    }
+  }
+}
+
+

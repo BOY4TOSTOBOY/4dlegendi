@@ -1,0 +1,1740 @@
+[
+{
+  "model": "legending.template",
+  "pk": 1,
+  "fields": {
+    "text": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_1|setNoon:\"3,1\"|inflect:\"gent\" }} \u0438 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\" }}",
+    "news": 1,
+    "role": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 2,
+  "fields": {
+    "text": "\u0421\u0443\u0442\u044c {{ question_1|inflect:\"gent\" }} \u0438 {{ question_2|inflect:\"gent\" }} \u2013 \u0432 {{ question_6|inflect:\"loct\" }}",
+    "role": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 3,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_2|setNoon:\"4,2\"|inflect:\"nomn\" }} {{ question_4|inflect:\"sing,nomn\" }} \u2013 \u0432\u043e\u0442 \u0447\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_4|inflect:\"datv\" }} {{ question_6|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 4,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn\" }} \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 5,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn,plur\" }} \u043c\u0435\u043d\u044f \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u044e\u0442: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_6|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 6,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0430\u043a \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e {{ question_3|inflect:\"gent\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_1|setNoon:\"6,1\"|inflect:\"datv\" }} {{ question_6|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 7,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442 {{ question_2|setNoon:\"6,2\"|inflect:\"sing,nomn\" }} {{ question_6|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 8,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\"  }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 9,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\"  }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_7|inflect:\"femn,nomn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 10,
+  "fields": {
+    "role": 1,
+    "text": "\u041f\u0440\u0438\u0437\u043d\u0430\u0432\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_4|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_7|setNoon:\"3,7\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 11,
+  "fields": {
+    "role": 1,
+    "text": "\u0415\u0441\u0442\u044c \u0442\u0430\u043a\u043e\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435, \u0447\u0442\u043e {{ question_1|setNoon:\"4,1\"|inflect:\"plur,nomn\" }} {{ question_4|inflect:\"nomn\" }} - \u043b\u0435\u0433\u0435\u043d\u0434\u0430 {{ question_6|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 12,
+  "fields": {
+    "role": 1,
+    "text": "\u041e\u0434\u043d\u0430\u0436\u0434\u044b {{ question_4|inflect:\"nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 {{ question_5|inflect:\"accs\" }} {{ question_3|inflect:\"gent\" }} \u0438...",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 13,
+  "fields": {
+    "role": 1,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_2|setNoon:\"4,2\"|inflect:\"ablt\" }} {{ question_4|inflect:\"sing,ablt\" }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_1|setNoon:\"3,1\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 14,
+  "fields": {
+    "role": 1,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_1|setNoon:\"3,1\"|inflect:\"gent\" }} \u0438 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 15,
+  "fields": {
+    "role": 1,
+    "text": "\u0421\u043c\u044b\u0441\u043b {{ question_1|inflect:\"gent\" }} \u0438 {{ question_2|inflect:\"gent\" }} \u2013 \u0432 {{ question_6|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 16,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_2|setNoon:\"4,2\"|inflect:\"nomn\" }} {{ question_4|inflect:\"sing,nomn\" }} \u2013 \u0438\u043c\u0435\u043d\u043d\u043e \u044d\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_4|inflect:\"datv\" }} {{ question_6|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 17,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"sing,nomn\" }} \u0437\u0430\u044f\u0432\u043b\u044f\u0435\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 18,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn,plur\" }} \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u0443\u044e\u0442\u0441\u044f: \u0432 \u0447\u0451\u043c {{ question_6|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 19,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0430\u043a \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f {{ question_3|inflect:\"datv\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_1|setNoon:\"6,1\"|inflect:\"datv\" }} {{ question_6|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 20,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442 {{ question_2|setNoon:\"6,2\"|inflect:\"sing\" }} {{ question_6|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 21,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 22,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_7|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 23,
+  "fields": {
+    "role": 1,
+    "text": "\u0421\u043e\u0437\u043d\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0438\u0437 \u0432\u0430\u0441 {{ question_4|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_7|setNoon:\"3,7\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 24,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0443\u0432\u0435\u0440\u0435\u043d\u044b, \u0447\u0442\u043e {{ question_1|setNoon:\"4,1\"|inflect:\"plur,nomn\" }} {{ question_4|inflect:\"nomn\" }} - \u0437\u0430\u043b\u043e\u0433 {{ question_6|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 25,
+  "fields": {
+    "role": 1,
+    "text": "\u0412 \u0442\u0435\u0445 \u0441\u043b\u0443\u0447\u0430\u044f\u0445, \u043a\u043e\u0433\u0434\u0430 {{ question_4|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_5|inflect:\"accs\" }} {{ question_3|inflect:\"gent\" }}, \u043c\u043e\u0436\u043d\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c \u0447\u0435\u0433\u043e \u0443\u0433\u043e\u0434\u043d\u043e..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 26,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_2|setNoon:\"4,2\"|inflect:\"ablt\" }} {{ question_4|inflect:\"sing,ablt\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043d\u0435\u0434\u043e\u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0442\u044c {{ question_1|setNoon:\"3,1\"|inflect:\"plur,accs\" }} {{ question_3|inflect:\"plur,accs\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 27,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn\" }}. \u0427\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u0435\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u043c \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_2|setNoon:\"6,2\"|inflect:\"gent\" }} {{ question_6|inflect:\"sing,gent\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 28,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }} - pro \u0438 contra",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 29,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_1|setNoon:\"3,1\"|inflect:\"gent\" }} \u0438 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 30,
+  "fields": {
+    "role": 1,
+    "text": "\u0418\u0434\u0435\u044f {{ question_1|inflect:\"gent\" }} \u0438 {{ question_2|inflect:\"gent\" }} \u2013 \u0432 {{ question_6|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 31,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_2|setNoon:\"4,2\"|inflect:\"nomn\" }} {{ question_4|inflect:\"sing,nomn\" }} \u2013 \u043b\u0435\u0436\u0438\u0442 \u0432 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0438 {{ question_4|inflect:\"gent\" }} {{ question_6|inflect:\"gent\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 32,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"sing,nomn\" }} \u0442\u0432\u0435\u0440\u0434\u0438\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 33,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn,plur\" }} \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_6|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 34,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0430\u043a \u0437\u0430 \u0441\u0447\u0435\u0442 {{ question_3|inflect:\"gent\" }} \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_1|setNoon:\"6,1\"|inflect:\"gent\" }} {{ question_6|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 35,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_4|inflect:\"nomn\" }} - \u043e\u043d\u0438 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u044e\u0442 {{ question_2|setNoon:\"6,2\"|inflect:\"sing\" }} {{ question_6|inflect:\"sing,nomn\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 36,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 37,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_5|inflect:\"nomn\" }} {{ question_3|inflect:\"gent\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_7|inflect:\"sing,nomn\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 38,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_4|inflect:\"nomn\" }}, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043b\u0441\u044f {{ question_7|setNoon:\"3,7\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 39,
+  "fields": {
+    "role": 1,
+    "text": "\u042d\u043a\u0441\u043f\u0435\u0440\u0442\u044b \u0441\u0447\u0438\u0442\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_1|setNoon:\"4,1\"|inflect:\"plur,nomn\" }} {{ question_4|inflect:\"nomn\" }}, \u043a\u0430\u043a \u043d\u0435 \u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441\u0430\u043b\u044c\u043d\u043e, \u0438\u043c\u0435\u044e\u0442 {{ question_6|inflect:\"sing,accs\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 40,
+  "fields": {
+    "role": 1,
+    "text": "\u0418\u043c\u0435\u043d\u043d\u043e \u0442\u043e\u0433\u0434\u0430, \u043a\u043e\u0433\u0434\u0430 {{ question_4|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_5|inflect:\"sing,accs\" }} {{ question_3|inflect:\"gent\" }}, - \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442\u0441\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 41,
+  "fields": {
+    "role": 1,
+    "text": "\u0422\u0435, \u043a\u0442\u043e \u0438\u043c\u0435\u0435\u0442 {{ question_2|setNoon:\"4,2\"|inflect:\"plur,accs\" }} {{ question_4|inflect:\"plur,accs\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u043b\u0438 \u0438\u0433\u043d\u043e\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c {{ question_1|setNoon:\"3,1\"|inflect:\"sing,nomn\" }} {{ question_3|inflect:\"sing,nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 42,
+  "fields": {
+    "role": 1,
+    "text": "\u0427\u0430\u0441\u0442\u043e {{ question_4|inflect:\"nomn\" }} \u043f\u043e\u043d\u0438\u043c\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 43,
+  "fields": {
+    "role": 1,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u0442\u043b\u0438\u0447\u0438\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\"  }} \u043e\u0442 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 44,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_2|setNoon:\"3,2\"|inflect:\"plur\" }} {{ question_3|inflect:\"plur,nomn\" }} \u0434\u043e\u043b\u0436\u043d\u044b \u0431\u044b\u0442\u044c \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"plur,ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 45,
+  "fields": {
+    "role": 1,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c {{ question_7|inflect:\"gent,plur\" }} {{ question_3|inflect:\"plur,gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 46,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 47,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_2|inflect:\"sing,femn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 48,
+  "fields": {
+    "role": 1,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_2|setNoon:\"3,2\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\"  }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_2|setNoon:\"3,2\"|inflect:\"ablt\" }} {{ question_3|inflect:\"ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 49,
+  "fields": {
+    "role": 1,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_7|setNoon:\"3,7\"|inflect:\"sing,gent\" }}  \u0438 \u043d\u0435 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 50,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0437\u0430\u044f\u0432\u043b\u044f\u044e\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"sing,nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}. \u0421\u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u043f\u0440\u043e\u0432\u0435\u0440\u0433\u043d\u0443\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 51,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 52,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0435 {{ question_2|setNoon:\"3,2\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_7|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 53,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_2|inflect:\"masc,ablt\" }} \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u043e\u043c - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043b\u044e\u0431\u0438\u0442\u044c {{ question_7|setNoon:\"3,7\"|inflect:\"plur,accs\" }} {{ question_3|inflect:\"plur,accs\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 54,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_7|setNoon:\"3,7\"|inflect:\"plur,nomn\" }} {{ question_3|inflect:\"plur,nomn\" }} - pro \u0438 contra",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 55,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"gent\" }} \u0438 {{ question_2|setNoon:\"3,2\"|inflect:\"gent\" }} {{ question_3|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 56,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u044b \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_3|inflect:\"nomn\" }} \u043d\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }}. \u041a\u0430\u043a \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 57,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u043e\u0432\u0438\u0447\u043a\u0438 \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 58,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_2|setNoon:\"3,2\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 59,
+  "fields": {
+    "role": 1,
+    "text": "{{ question_7|setNoon:\"3,7\"|inflect:\"nomn\" }} {{ question_3|inflect:\"sing,nomn\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_2|inflect:\"masc,sing\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 60,
+  "fields": {
+    "role": 1,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443 - \u043a\u0442\u043e \u0442\u0443\u0442 \u0432\u0435\u0440\u0438\u0442 \u0432 \u0441\u043f\u0440\u0430\u0432\u0435\u0434\u043b\u0438\u0432\u043e\u0441\u0442\u044c, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_7|setNoon:\"3,7\"|inflect:\"sing,ablt\" }} {{ question_3|inflect:\"sing,ablt\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 61,
+  "fields": {
+    "role": 1,
+    "text": "\u0415\u0441\u043b\u0438 \u0443\u0432\u0430\u0436\u0430\u0435\u0448\u044c \u0441\u0435\u0431\u044f - \u043d\u0435 \u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0441\u044f {{ question_7|setNoon:\"3,7\"|inflect:\"plur,ablt\" }} {{ question_3|inflect:\"plur,ablt\" }}. \u0410\u0440\u0433\u0443\u043c\u0435\u043d\u0442\u0438\u0440\u0443\u0439\u0442\u0435 ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 62,
+  "fields": {
+    "role": 2,
+    "text": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_8|setNoon:\"10,8\"|inflect:\"gent\" }} \u0438 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 63,
+  "fields": {
+    "role": 2,
+    "text": "\u0421\u0443\u0442\u044c {{ question_8|inflect:\"gent\" }} \u0438 {{ question_9|inflect:\"gent\" }} \u2013 \u0432 {{ question_13|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 64,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_9|setNoon:\"11,9\"|inflect:\"nomn\" }} {{ question_11|inflect:\"sing,nomn\" }} \u2013 \u0432\u043e\u0442 \u0447\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_11|inflect:\"datv\" }} {{ question_13|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 65,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn\" }} \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 66,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn,plur\" }} \u043c\u0435\u043d\u044f \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u044e\u0442: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_13|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 67,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0430\u043a \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e {{ question_10|inflect:\"gent\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_8|setNoon:\"13,8\"|inflect:\"datv\" }} {{ question_13|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 68,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442 {{ question_9|setNoon:\"13,9\"|inflect:\"sing,nomn\" }} {{ question_13|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 69,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\"  }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 70,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\"  }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_14|inflect:\"femn,nomn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 71,
+  "fields": {
+    "role": 2,
+    "text": "\u041f\u0440\u0438\u0437\u043d\u0430\u0432\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_11|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_14|setNoon:\"10,14\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 72,
+  "fields": {
+    "role": 2,
+    "text": "\u0415\u0441\u0442\u044c \u0442\u0430\u043a\u043e\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435, \u0447\u0442\u043e {{ question_8|setNoon:\"11,8\"|inflect:\"plur,nomn\" }} {{ question_11|inflect:\"nomn\" }} - \u043b\u0435\u0433\u0435\u043d\u0434\u0430 {{ question_13|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 73,
+  "fields": {
+    "role": 2,
+    "text": "\u041e\u0434\u043d\u0430\u0436\u0434\u044b {{ question_11|inflect:\"nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 {{ question_12|inflect:\"accs\" }} {{ question_10|inflect:\"gent\" }} \u0438...",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 74,
+  "fields": {
+    "role": 2,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_9|setNoon:\"11,9\"|inflect:\"ablt\" }} {{ question_11|inflect:\"sing,ablt\" }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_8|setNoon:\"10,8\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 75,
+  "fields": {
+    "role": 2,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_8|setNoon:\"10,8\"|inflect:\"gent\" }} \u0438 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 76,
+  "fields": {
+    "role": 2,
+    "text": "\u0421\u043c\u044b\u0441\u043b {{ question_8|inflect:\"gent\" }} \u0438 {{ question_9|inflect:\"gent\" }} \u2013 \u0432 {{ question_13|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 77,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_9|setNoon:\"11,9\"|inflect:\"nomn\" }} {{ question_11|inflect:\"sing,nomn\" }} \u2013 \u0438\u043c\u0435\u043d\u043d\u043e \u044d\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_11|inflect:\"datv\" }} {{ question_13|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 78,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"sing,nomn\" }} \u0437\u0430\u044f\u0432\u043b\u044f\u0435\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 79,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn,plur\" }} \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u0443\u044e\u0442\u0441\u044f: \u0432 \u0447\u0451\u043c {{ question_13|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 80,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0430\u043a \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f {{ question_10|inflect:\"datv\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_8|setNoon:\"13,8\"|inflect:\"datv\" }} {{ question_13|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 81,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442 {{ question_9|setNoon:\"13,9\"|inflect:\"sing\" }} {{ question_13|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 82,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 83,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_14|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 84,
+  "fields": {
+    "text": "\u0421\u043e\u0437\u043d\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0438\u0437 \u0432\u0430\u0441 {{ question_11|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_14|setNoon:\"10,14\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\" }}?",
+    "role": 2,
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 85,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0443\u0432\u0435\u0440\u0435\u043d\u044b, \u0447\u0442\u043e {{ question_8|setNoon:\"11,8\"|inflect:\"plur,nomn\" }} {{ question_11|inflect:\"nomn\" }} - \u0437\u0430\u043b\u043e\u0433 {{ question_13|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 86,
+  "fields": {
+    "role": 2,
+    "text": "\u0412 \u0442\u0435\u0445 \u0441\u043b\u0443\u0447\u0430\u044f\u0445, \u043a\u043e\u0433\u0434\u0430 {{ question_11|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_12|inflect:\"accs\" }} {{ question_10|inflect:\"gent\" }}, \u043c\u043e\u0436\u043d\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c \u0447\u0435\u0433\u043e \u0443\u0433\u043e\u0434\u043d\u043e..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 87,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_9|setNoon:\"11,9\"|inflect:\"ablt\" }} {{ question_11|inflect:\"sing,ablt\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043d\u0435\u0434\u043e\u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0442\u044c {{ question_8|setNoon:\"10,8\"|inflect:\"plur,accs\" }} {{ question_10|inflect:\"plur,accs\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 88,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn\" }}. \u0427\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u0435\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u043c \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_9|setNoon:\"13,9\"|inflect:\"gent\" }} {{ question_13|inflect:\"sing,gent\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 89,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }} - pro \u0438 contra",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 90,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_8|setNoon:\"10,8\"|inflect:\"gent\" }} \u0438 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 91,
+  "fields": {
+    "role": 2,
+    "text": "\u0418\u0434\u0435\u044f {{ question_8|inflect:\"gent\" }} \u0438 {{ question_9|inflect:\"gent\" }} \u2013 \u0432 {{ question_13|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 92,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_9|setNoon:\"11,9\"|inflect:\"nomn\" }} {{ question_11|inflect:\"sing,nomn\" }} \u2013 \u043b\u0435\u0436\u0438\u0442 \u0432 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0438 {{ question_11|inflect:\"gent\" }} {{ question_13|inflect:\"gent\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 93,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"sing,nomn\" }} \u0442\u0432\u0435\u0440\u0434\u0438\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 94,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn,plur\" }} \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_13|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 95,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0430\u043a \u0437\u0430 \u0441\u0447\u0435\u0442 {{ question_10|inflect:\"gent\" }} \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_8|setNoon:\"13,8\"|inflect:\"gent\" }} {{ question_13|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 96,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_11|inflect:\"nomn\" }} - \u043e\u043d\u0438 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u044e\u0442 {{ question_9|setNoon:\"13,9\"|inflect:\"sing\" }} {{ question_13|inflect:\"sing,nomn\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 97,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 98,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_12|inflect:\"nomn\" }} {{ question_10|inflect:\"gent\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_14|inflect:\"sing,nomn\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 99,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_11|inflect:\"nomn\" }}, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043b\u0441\u044f {{ question_14|setNoon:\"10,14\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 100,
+  "fields": {
+    "role": 2,
+    "text": "\u042d\u043a\u0441\u043f\u0435\u0440\u0442\u044b \u0441\u0447\u0438\u0442\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_8|setNoon:\"11,8\"|inflect:\"plur,nomn\" }} {{ question_11|inflect:\"nomn\" }}, \u043a\u0430\u043a \u043d\u0435 \u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441\u0430\u043b\u044c\u043d\u043e, \u0438\u043c\u0435\u044e\u0442 {{ question_13|inflect:\"sing,accs\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 101,
+  "fields": {
+    "role": 2,
+    "text": "\u0418\u043c\u0435\u043d\u043d\u043e \u0442\u043e\u0433\u0434\u0430, \u043a\u043e\u0433\u0434\u0430 {{ question_11|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_12|inflect:\"sing,accs\" }} {{ question_10|inflect:\"gent\" }}, - \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442\u0441\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 102,
+  "fields": {
+    "role": 2,
+    "text": "\u0422\u0435, \u043a\u0442\u043e \u0438\u043c\u0435\u0435\u0442 {{ question_9|setNoon:\"11,9\"|inflect:\"plur,accs\" }} {{ question_11|inflect:\"plur,accs\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u043b\u0438 \u0438\u0433\u043d\u043e\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c {{ question_1|setNoon:\"10,8\"|inflect:\"sing,nomn\" }} {{ question_10|inflect:\"sing,nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 103,
+  "fields": {
+    "role": 2,
+    "text": "\u0427\u0430\u0441\u0442\u043e {{ question_11|inflect:\"nomn\" }} \u043f\u043e\u043d\u0438\u043c\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 104,
+  "fields": {
+    "role": 2,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u0442\u043b\u0438\u0447\u0438\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\"  }} \u043e\u0442 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 105,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_9|setNoon:\"10,9\"|inflect:\"plur\" }} {{ question_10|inflect:\"plur,nomn\" }} \u0434\u043e\u043b\u0436\u043d\u044b \u0431\u044b\u0442\u044c \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"plur,ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 106,
+  "fields": {
+    "role": 2,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c {{ question_14|inflect:\"gent,plur\" }} {{ question_10|inflect:\"plur,gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 107,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 108,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_9|inflect:\"sing,femn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 109,
+  "fields": {
+    "role": 2,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_9|setNoon:\"10,9\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\"  }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_9|setNoon:\"10,9\"|inflect:\"ablt\" }} {{ question_10|inflect:\"ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 110,
+  "fields": {
+    "role": 2,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_14|setNoon:\"10,14\"|inflect:\"sing,gent\" }}  \u0438 \u043d\u0435 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 111,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0437\u0430\u044f\u0432\u043b\u044f\u044e\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"sing,nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}. \u0421\u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u043f\u0440\u043e\u0432\u0435\u0440\u0433\u043d\u0443\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 112,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 113,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0435 {{ question_9|setNoon:\"10,9\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_14|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 114,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_9|inflect:\"masc,ablt\" }} \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u043e\u043c - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043b\u044e\u0431\u0438\u0442\u044c {{ question_14|setNoon:\"10,14\"|inflect:\"plur,accs\" }} {{ question_10|inflect:\"plur,accs\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 115,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_14|setNoon:\"10,14\"|inflect:\"plur,nomn\" }} {{ question_10|inflect:\"plur,nomn\" }} - pro \u0438 contra",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 116,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"gent\" }} \u0438 {{ question_9|setNoon:\"10,9\"|inflect:\"gent\" }} {{ question_10|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 117,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u044b \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_10|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }}. \u041a\u0430\u043a \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 118,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u043e\u0432\u0438\u0447\u043a\u0438 \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 119,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_9|setNoon:\"10,9\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 120,
+  "fields": {
+    "role": 2,
+    "text": "{{ question_14|setNoon:\"10,14\"|inflect:\"nomn\" }} {{ question_10|inflect:\"sing,nomn\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_9|inflect:\"masc,sing\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 121,
+  "fields": {
+    "role": 2,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443 - \u043a\u0442\u043e \u0442\u0443\u0442 \u0432\u0435\u0440\u0438\u0442 \u0432 \u0441\u043f\u0440\u0430\u0432\u0435\u0434\u043b\u0438\u0432\u043e\u0441\u0442\u044c, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_14|setNoon:\"10,14\"|inflect:\"sing,ablt\" }} {{ question_10|inflect:\"sing,ablt\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 122,
+  "fields": {
+    "role": 2,
+    "text": "\u0415\u0441\u043b\u0438 \u0443\u0432\u0430\u0436\u0430\u0435\u0448\u044c \u0441\u0435\u0431\u044f - \u043d\u0435 \u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0441\u044f {{ question_14|setNoon:\"10,14\"|inflect:\"plur,ablt\" }} {{ question_10|inflect:\"plur,ablt\" }}. \u0410\u0440\u0433\u0443\u043c\u0435\u043d\u0442\u0438\u0440\u0443\u0439\u0442\u0435 ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 123,
+  "fields": {
+    "role": 3,
+    "text": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_15|setNoon:\"17,15\"|inflect:\"gent\" }} \u0438 {{ question_16|setNoon:\"17,16\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 124,
+  "fields": {
+    "role": 3,
+    "text": "\u0421\u0443\u0442\u044c {{ question_15|inflect:\"gent\" }} \u0438 {{ question_16|inflect:\"gent\" }} \u2013 \u0432 {{ question_19|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 125,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_16|setNoon:\"18,16\"|inflect:\"nomn\" }} {{ question_18|inflect:\"sing,nomn\" }} \u2013 \u0432\u043e\u0442 \u0447\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_18|inflect:\"datv\" }} {{ question_20|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 126,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn\" }} \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"17,21\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 127,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn,plur\" }} \u043c\u0435\u043d\u044f \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u044e\u0442: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_20|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 128,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0430\u043a \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e {{ question_17|inflect:\"gent\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_15|setNoon:\"20,15\"|inflect:\"datv\" }} {{ question_20|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 129,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0442 {{ question_16|setNoon:\"20,16\"|inflect:\"sing,nomn\" }} {{ question_20|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 130,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\"  }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 131,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\"  }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_21|inflect:\"femn,nomn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 132,
+  "fields": {
+    "role": 3,
+    "text": "\u041f\u0440\u0438\u0437\u043d\u0430\u0432\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_18|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_21|setNoon:\"17,21\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 133,
+  "fields": {
+    "role": 3,
+    "text": "\u0415\u0441\u0442\u044c \u0442\u0430\u043a\u043e\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435, \u0447\u0442\u043e {{ question_15|setNoon:\"18,15\"|inflect:\"plur,nomn\" }} {{ question_18|inflect:\"nomn\" }} - \u043b\u0435\u0433\u0435\u043d\u0434\u0430 {{ question_20|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 134,
+  "fields": {
+    "role": 3,
+    "text": "\u041e\u0434\u043d\u0430\u0436\u0434\u044b {{ question_18|inflect:\"nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 {{ question_19|inflect:\"accs\" }} {{ question_17|inflect:\"gent\" }} \u0438...",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 135,
+  "fields": {
+    "role": 3,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_16|setNoon:\"18,16\"|inflect:\"ablt\" }} {{ question_18|inflect:\"sing,ablt\" }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_15|setNoon:\"17,15\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 136,
+  "fields": {
+    "role": 3,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_15|setNoon:\"17,15\"|inflect:\"gent\" }} \u0438 {{ question_16|setNoon:\"17,16\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 137,
+  "fields": {
+    "role": 3,
+    "text": "\u0421\u043c\u044b\u0441\u043b {{ question_15|inflect:\"gent\" }} \u0438 {{ question_16|inflect:\"gent\" }} \u2013 \u0432 {{ question_20|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 138,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_16|setNoon:\"18,16\"|inflect:\"nomn\" }} {{ question_18|inflect:\"sing,nomn\" }} \u2013 \u0438\u043c\u0435\u043d\u043d\u043e \u044d\u0442\u043e \u0434\u0430\u0451\u0442 {{ question_18|inflect:\"datv\" }} {{ question_20|inflect:\"nomn\" }}!"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 139,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"sing,nomn\" }} \u0437\u0430\u044f\u0432\u043b\u044f\u0435\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"nomn\" }} \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 140,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn,plur\" }} \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u0443\u044e\u0442\u0441\u044f: \u0432 \u0447\u0451\u043c {{ question_20|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 141,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0430\u043a \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f {{ question_17|inflect:\"datv\" }} \u043f\u0440\u0438\u0439\u0442\u0438 \u043a {{ question_15|setNoon:\"20,15\"|inflect:\"datv\" }} {{ question_20|inflect:\"datv\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 142,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn\" }}. \u0427\u0442\u043e \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442 {{ question_16|setNoon:\"20,16\"|inflect:\"sing\" }} {{ question_20|inflect:\"sing,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 143,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 144,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_21|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 145,
+  "fields": {
+    "role": 3,
+    "text": "\u0421\u043e\u0437\u043d\u0430\u0439\u0442\u0435\u0441\u044c, \u043a\u0442\u043e \u0438\u0437 \u0432\u0430\u0441 {{ question_18|inflect:\"nomn\" }} \u0438 \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_21|setNoon:\"17,21\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 146,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0443\u0432\u0435\u0440\u0435\u043d\u044b, \u0447\u0442\u043e {{ question_15|setNoon:\"18,15\"|inflect:\"plur,nomn\" }} {{ question_18|inflect:\"nomn\" }} - \u0437\u0430\u043b\u043e\u0433 {{ question_20|inflect:\"gent\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 147,
+  "fields": {
+    "role": 3,
+    "text": "\u0412 \u0442\u0435\u0445 \u0441\u043b\u0443\u0447\u0430\u044f\u0445, \u043a\u043e\u0433\u0434\u0430 {{ question_18|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_19|inflect:\"accs\" }} {{ question_17|inflect:\"gent\" }}, \u043c\u043e\u0436\u043d\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c \u0447\u0435\u0433\u043e \u0443\u0433\u043e\u0434\u043d\u043e..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 148,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_16|setNoon:\"18,16\"|inflect:\"ablt\" }} {{ question_18|inflect:\"sing,ablt\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043d\u0435\u0434\u043e\u043e\u0446\u0435\u043d\u0438\u0432\u0430\u0442\u044c {{ question_15|setNoon:\"17,15\"|inflect:\"plur,accs\" }} {{ question_17|inflect:\"plur,accs\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 149,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn\" }}. \u0427\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u0435\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u043c \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_16|setNoon:\"20,16\"|inflect:\"gent\" }} {{ question_20|inflect:\"sing,gent\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 150,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }} - pro \u0438 contra",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 151,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_15|setNoon:\"17,15\"|inflect:\"gent\" }} \u0438 {{ question_2|setNoon:\"17,16\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 152,
+  "fields": {
+    "role": 3,
+    "text": "\u0418\u0434\u0435\u044f {{ question_15|inflect:\"gent\" }} \u0438 {{ question_16|inflect:\"gent\" }} \u2013 \u0432 {{ question_20|inflect:\"loct\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 153,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_16|setNoon:\"18,16\"|inflect:\"nomn\" }} {{ question_18|inflect:\"sing,nomn\" }} \u2013 \u043b\u0435\u0436\u0438\u0442 \u0432 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0438 {{ question_18|inflect:\"gent\" }} {{ question_20|inflect:\"gent\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 154,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"sing,nomn\" }} \u0442\u0432\u0435\u0440\u0434\u0438\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"nomn\" }} \u043d\u0435 {{ question_14|setNoon:\"17,21\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 155,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn,plur\" }} \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_20|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 156,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0430\u043a \u0437\u0430 \u0441\u0447\u0435\u0442 {{ question_17|inflect:\"gent\" }} \u0434\u043e\u0431\u0438\u0442\u044c\u0441\u044f {{ question_15|setNoon:\"20,15\"|inflect:\"gent\" }} {{ question_20|inflect:\"gent\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 157,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_18|inflect:\"nomn\" }} - \u043e\u043d\u0438 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u044e\u0442 {{ question_16|setNoon:\"20,16\"|inflect:\"sing\" }} {{ question_20|inflect:\"sing,nomn\" }}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 158,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 159,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_19|inflect:\"nomn\" }} {{ question_17|inflect:\"gent\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_21|inflect:\"sing,nomn\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 160,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443, \u043a\u0442\u043e \u0442\u0443\u0442 {{ question_18|inflect:\"nomn\" }}, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043b\u0441\u044f {{ question_21|setNoon:\"17,21\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\" }}?",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 161,
+  "fields": {
+    "role": 3,
+    "text": "\u042d\u043a\u0441\u043f\u0435\u0440\u0442\u044b \u0441\u0447\u0438\u0442\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_15|setNoon:\"18,15\"|inflect:\"plur,nomn\" }} {{ question_18|inflect:\"nomn\" }}, \u043a\u0430\u043a \u043d\u0435 \u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441\u0430\u043b\u044c\u043d\u043e, \u0438\u043c\u0435\u044e\u0442 {{ question_20|inflect:\"sing,accs\"}}"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 162,
+  "fields": {
+    "role": 3,
+    "text": "\u0418\u043c\u0435\u043d\u043d\u043e \u0442\u043e\u0433\u0434\u0430, \u043a\u043e\u0433\u0434\u0430 {{ question_18|inflect:\"sing,nomn\" }} \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 {{ question_19|inflect:\"sing,accs\" }} {{ question_17|inflect:\"gent\" }}, - \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442\u0441\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b..",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 163,
+  "fields": {
+    "role": 3,
+    "text": "\u0422\u0435, \u043a\u0442\u043e \u0438\u043c\u0435\u0435\u0442 {{ question_16|setNoon:\"18,16\"|inflect:\"plur,accs\" }} {{ question_18|inflect:\"plur,accs\" }} - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u043b\u0438 \u0438\u0433\u043d\u043e\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c {{ question_8|setNoon:\"17,15\"|inflect:\"sing,nomn\" }} {{ question_17|inflect:\"sing,nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 164,
+  "fields": {
+    "role": 3,
+    "text": "\u0427\u0430\u0441\u0442\u043e {{ question_18|inflect:\"nomn\" }} \u043f\u043e\u043d\u0438\u043c\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"nomn\" }} \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }}",
+    "news": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 165,
+  "fields": {
+    "role": 3,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u0442\u043b\u0438\u0447\u0438\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\"  }} \u043e\u0442 {{ question_16|setNoon:\"17,16\"|inflect:\"gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 166,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_16|setNoon:\"17,16\"|inflect:\"plur\" }} {{ question_17|inflect:\"plur,nomn\" }} \u0434\u043e\u043b\u0436\u043d\u044b \u0431\u044b\u0442\u044c \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"plur,ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 167,
+  "fields": {
+    "role": 3,
+    "text": "\u0412 \u0447\u0451\u043c \u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c {{ question_21|inflect:\"gent,plur\" }} {{ question_17|inflect:\"plur,gent\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 168,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_14|setNoon:\"17,21\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u0437\u0430 \u0438 \u043f\u0440\u043e\u0442\u0438\u0432",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 169,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u0433\u043b\u0443\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_16|inflect:\"sing,femn\" }} \u0440\u0430\u0431\u043e\u0442\u0430?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 170,
+  "fields": {
+    "role": 3,
+    "text": "\u0412 \u0442\u043e\u0442 \u043c\u043e\u043c\u0435\u043d\u0442, \u043a\u043e\u0433\u0434\u0430 \u0432\u044b \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0431\u044b\u0442\u044c {{ question_16|setNoon:\"17,16\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\"  }}  - \u0432\u044b \u043d\u0435 \u0441\u043c\u0435\u0451\u0442\u0435\u0441\u044c \u043d\u0430\u0434 {{ question_16|setNoon:\"17,16\"|inflect:\"ablt\" }} {{ question_17|inflect:\"ablt\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 171,
+  "fields": {
+    "role": 3,
+    "text": "\u041e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 {{ question_21|setNoon:\"17,21\"|inflect:\"sing,gent\" }}  \u0438 \u043d\u0435 {{ question_16|setNoon:\"17,16\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 172,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0437\u0430\u044f\u0432\u043b\u044f\u044e\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"sing,nomn\" }} \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }}. \u0421\u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u043f\u0440\u043e\u0432\u0435\u0440\u0433\u043d\u0443\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 173,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u043f\u043b\u044e\u0441\u044b \u0438 \u043c\u0438\u043d\u0443\u0441\u044b",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 174,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0435 {{ question_16|setNoon:\"17,16\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u043d\u0435\u043b\u0435\u043f\u043e\u0441\u0442\u044c \u0438\u043b\u0438 {{ question_21|inflect:\"femn,nomn\" }} \u0445\u0438\u0442\u0440\u043e\u0441\u0442\u044c",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 175,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0448\u044c\u0441\u044f {{ question_16|inflect:\"masc,ablt\" }} \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u043e\u043c - \u043f\u0435\u0440\u0435\u0441\u0442\u0430\u0435\u0448\u044c \u043b\u044e\u0431\u0438\u0442\u044c {{ question_21|setNoon:\"17,21\"|inflect:\"plur,accs\" }} {{ question_17|inflect:\"plur,accs\" }}",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 176,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_21|setNoon:\"17,21\"|inflect:\"plur,nomn\" }} {{ question_17|inflect:\"plur,nomn\" }} - pro \u0438 contra",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 177,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0435 \u0442\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"gent\" }} \u0438 {{ question_16|setNoon:\"17,16\"|inflect:\"gent\" }} {{ question_17|inflect:\"sing,gent\" }} - \u044d\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 178,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u044b \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u044e\u0442, \u0447\u0442\u043e {{ question_17|inflect:\"nomn\" }} \u043d\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }}. \u041a\u0430\u043a \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 179,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u043e\u0432\u0438\u0447\u043a\u0438 \u0437\u0430\u0434\u0430\u044e\u0442 \u0432\u043e\u043f\u0440\u043e\u0441: \u0447\u0442\u043e \u0442\u0430\u043a\u043e\u0435 {{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 180,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_16|setNoon:\"17,16\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u0431\u044b\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 \u0431\u044b\u0442\u044c ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 181,
+  "fields": {
+    "role": 3,
+    "text": "{{ question_21|setNoon:\"17,21\"|inflect:\"nomn\" }} {{ question_17|inflect:\"sing,nomn\" }} - \u043d\u0430\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438\u043b\u0438 \u043d\u0435 {{ question_16|inflect:\"masc,sing\" }} \u0437\u0430\u043c\u044b\u0441\u0435\u043b?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 182,
+  "fields": {
+    "role": 3,
+    "text": "\u041d\u0430 \u0447\u0438\u0441\u0442\u043e\u0442\u0443 - \u043a\u0442\u043e \u0442\u0443\u0442 \u0432\u0435\u0440\u0438\u0442 \u0432 \u0441\u043f\u0440\u0430\u0432\u0435\u0434\u043b\u0438\u0432\u043e\u0441\u0442\u044c, \u043e\u0434\u043d\u0430\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f {{ question_21|setNoon:\"17,21\"|inflect:\"sing,ablt\" }} {{ question_17|inflect:\"sing,ablt\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 183,
+  "fields": {
+    "role": 3,
+    "text": "\u0415\u0441\u043b\u0438 \u0443\u0432\u0430\u0436\u0430\u0435\u0448\u044c \u0441\u0435\u0431\u044f - \u043d\u0435 \u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0441\u044f {{ question_21|setNoon:\"17,21\"|inflect:\"plur,ablt\" }} {{ question_17|inflect:\"plur,ablt\" }}. \u0410\u0440\u0433\u0443\u043c\u0435\u043d\u0442\u0438\u0440\u0443\u0439\u0442\u0435 ",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 184,
+  "fields": {
+    "role": 1,
+    "text": "\u0427\u0435\u043c \u0445\u043e\u0440\u043e\u0448 {{ question_2|setNoon:\"3,2\"|inflect:\"sing,nomn\" }} {{ question_3|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 185,
+  "fields": {
+    "role": 2,
+    "text": "\u0427\u0435\u043c \u0445\u043e\u0440\u043e\u0448 {{ question_9|setNoon:\"10,9\"|inflect:\"sing,nomn\" }} {{ question_10|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 186,
+  "fields": {
+    "role": 3,
+    "text": "\u0427\u0435\u043c \u0445\u043e\u0440\u043e\u0448 {{ question_16|setNoon:\"17,16\"|inflect:\"sing,nomn\" }} {{ question_17|inflect:\"sing,nomn\" }}?",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 187,
+  "fields": {
+    "role": 1,
+    "text": "\u041e\u043f\u0430\u0441\u0430\u0439\u0442\u0435\u0441\u044c {{ question_7|setNoon:\"3,7\"|inflect:\"sing,accs\" }} {{ question_3|inflect:\"sing,accs\" }}, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 188,
+  "fields": {
+    "role": 2,
+    "text": "\u041e\u043f\u0430\u0441\u0430\u0439\u0442\u0435\u0441\u044c {{ question_14|setNoon:\"10,14\"|inflect:\"sing,accs\" }} {{ question_10|inflect:\"sing,accs\" }}, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 189,
+  "fields": {
+    "role": 3,
+    "text": "\u041e\u043f\u0430\u0441\u0430\u0439\u0442\u0435\u0441\u044c {{ question_21|setNoon:\"17,21\"|inflect:\"sing,accs\" }} {{ question_17|inflect:\"sing,accs\" }}, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 190,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u044f \u0431\u044b\u0432\u0430\u044e {{ question_2|inflect:\"sing,ablt\" }}, \u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 191,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u044f \u0431\u044b\u0432\u0430\u044e {{ question_9|inflect:\"sing,ablt\" }}, \u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 192,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u044f \u0431\u044b\u0432\u0430\u044e {{ question_16|inflect:\"sing,ablt\" }}, \u0442\u043e...",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 193,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u0447\u0442\u043e-\u0442\u043e {{ question_7|inflect:\"sing,neut\" }}, \u043c\u0435\u043d\u044f \u044d\u0442\u043e \u0432\u043e\u0437\u043c\u0443\u0449\u0430\u0435\u0442",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 194,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u0447\u0442\u043e-\u0442\u043e {{ question_14|inflect:\"sing,neut\" }}, \u043c\u0435\u043d\u044f \u044d\u0442\u043e \u0432\u043e\u0437\u043c\u0443\u0449\u0430\u0435\u0442",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 195,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u043e\u0433\u0434\u0430 \u0447\u0442\u043e-\u0442\u043e {{ question_21|inflect:\"sing,neut\" }}, \u043c\u0435\u043d\u044f \u044d\u0442\u043e \u0432\u043e\u0437\u043c\u0443\u0449\u0430\u0435\u0442",
+    "version": 1
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 196,
+  "fields": {
+    "role": 1,
+    "text": "\u041a\u0442\u043e \u0442\u0430\u043a\u0438\u0435 {{ question_2|setNoon:\"4,2\"|inflect:\"plur,nomn\" }} {{ question_4|inflect:\"plur,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 197,
+  "fields": {
+    "role": 2,
+    "text": "\u041a\u0442\u043e \u0442\u0430\u043a\u0438\u0435 {{ question_9|setNoon:\"11,9\"|inflect:\"plur,nomn\" }} {{ question_11|inflect:\"plur,nomn\" }}?"
+  }
+},
+{
+  "model": "legending.template",
+  "pk": 198,
+  "fields": {
+    "role": 3,
+    "text": "\u041a\u0442\u043e \u0442\u0430\u043a\u0438\u0435 {{ question_16|setNoon:\"18,16\"|inflect:\"plur,nomn\" }} {{ question_18|inflect:\"plur,nomn\" }}?"
+  }
+}
+]

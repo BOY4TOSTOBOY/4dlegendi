@@ -1,0 +1,63 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <div mat-dialog-title>
+    Оставить отзыв
+  </div>
+
+  <button
+          mat-icon-button
+          color="warn"
+          mat-dialog-close
+  >
+    <mat-icon>
+      close
+    </mat-icon>
+  </button>
+</div>
+
+<div
+        *ngIf="feedBackForm"
+        mat-dialog-content
+        [formGroup]="feedBackForm"
+>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>
+      Понравилось
+    </mat-label>
+    <textarea
+            matInput
+            placeholder="Расскажите, что вам понравилось в нашем приложении..."
+            formControlName="text_like"
+            matAutosizeMinRows="2"
+            matTextareaAutosize
+    ></textarea>
+  </mat-form-field>
+
+  <mat-form-field
+          appearance="outline"
+          class="full-width"
+  >
+    <mat-label>
+      Предложения по улучшению
+    </mat-label>
+    <textarea
+            matInput
+            placeholder="Расскажите, что можно улучшить в нашем приложении..."
+            formControlName="text_better"
+            matAutosizeMinRows="2"
+            matTextareaAutosize
+    ></textarea>
+  </mat-form-field>
+
+  <div
+          fxLayout="row"
+          fxLayoutAlign="center center"
+  >
+    <button
+            mat-flat-button
+            color="primary"
+            (click)="saveFeedback()"
+    >
+      Отправить отзыв
+    </button>
+  </div>
+</div>

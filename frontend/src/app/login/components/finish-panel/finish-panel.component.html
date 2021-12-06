@@ -1,0 +1,28 @@
+<mat-card class="poll-card-container">
+  <mat-card-content
+    class="poll-card-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+  >
+    <div>оформите подписку чтобы продолжить опрос</div>
+    <div
+      fxLayout="row"
+      fxLayoutGap="8px"
+      fxLayoutAlign="center center"
+      class="buttons"
+    >
+      <button class="btn" mat-stroked-button (click)="goToAuthPage()">
+        Завершить опрос
+      </button>
+      <button
+        class="btn"
+        mat-stroked-button
+        (click)="goToProceed()"
+        [disabled]="true"
+      >
+        Продолжить опрос
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

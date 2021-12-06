@@ -1,0 +1,36 @@
+<!-- <button mat-flat-button type="button" (click)="goToMain()"><mat-icon>reply</mat-icon></button> -->
+<mat-card class="poll-card-container">
+  <mat-card-content
+    class="poll-card-content authorization-container-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+  >
+    <div class="poll-card-completed-poll-header" *ngIf="isPollCompleted">
+      <p class="text1">Спасибо за то, что прошли опрос!</p>
+    </div>
+    <div
+      class="poll-card-completed-poll-header poll-card-completed-poll-subheader"
+    >
+      <p class="text2">Остался один шаг до начала работы</p>
+    </div>
+    <span> Авторизуйтесь в системе </span>
+    <button mat-stroked-button class="btn" (click)="login()">Войти</button>
+    <span> Еще не с нами? </span>
+    <button mat-stroked-button class="btn" (click)="registration()">
+      Зарегистрироваться
+    </button>
+    <span class="text"> Войти с помощью социальных сетей </span>
+    <div class="btns" fxLayout="row" fxLayoutGap="8px">
+      <a
+        class="links"
+        mat-stroked-button
+        (click)="network.onClick()"
+        *ngFor="let network of socialNetworkButtons"
+      >
+        <mat-icon class="icon" svgIcon="{{ network.iconName }}"></mat-icon>
+        <span class="linkText">{{ network.label }}</span>
+      </a>
+    </div>
+  </mat-card-content>
+</mat-card>

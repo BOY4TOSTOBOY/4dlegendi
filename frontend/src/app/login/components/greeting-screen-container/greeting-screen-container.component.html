@@ -1,0 +1,39 @@
+<mat-card class="poll-card-container">
+  <mat-card-content
+    class="poll-card-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+  >
+    <span class="poll-card-header"> Добро пожаловать </span>
+    <div class="poll-card-text">
+      <p class="text">
+        Планируйте свой уникальный контент.<br /><br />
+        С нашей методологией 4D - контент (LEGENDING), вы сможете выразить свой
+        уникальный взгляд на темы важные вашему окружению.<br />
+        Мы считаем, что эпоха репостов и пересказываний уже известных мыслей,
+        привела к огромному количеству информационного мусора. Хватит рыть
+        могилу человечеству. Без творчества, искусственный интеллект вытеснит
+        людей. Давайте проявим настоящую Человечность - уделим внимание
+        утонченным чувствам и новым мыслям.<br />
+        <br />
+        Ответьте на 3 или более вопросов, заполнение займет 5-10 минут
+      </p>
+    </div>
+    <div
+      fxLayout="row"
+      fxLayoutGap="8px"
+      fxLayoutAlign="center center"
+      class="buttons"
+    >
+      <button class="btn" mat-stroked-button (click)="startPoll()">
+        {{ isFirstPoll ? "Начать опрос" : "Продолжить опрос" }} и
+        зарегистрироваться
+      </button>
+
+      <button class="btn2" mat-stroked-button (click)="goToLogin()">
+        Войти в систему
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

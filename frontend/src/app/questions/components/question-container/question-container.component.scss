@@ -1,0 +1,16 @@
+.answer-area {
+  width: 80%;
+  height: 100%;
+}
+@media (max-width: 414px) {
+  .btn {
+    color: #003366;
+    border-radius: 10px;
+  }
+  .poll-card-container {
+    border-radius: 20px;
+  }
+  .question-panel {
+    margin-bottom: 0 !important;
+  }
+}

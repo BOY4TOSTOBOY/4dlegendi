@@ -1,0 +1,45 @@
+<div class="events-list-edition-dialog-container">
+    <ng-container *ngIf="events; else waitingTemplate">
+        <div mat-dialog-title>
+            Редактирование ивентов на {{ date.toLocaleDateString() }}
+        </div>
+
+        <div
+                mat-dialog-content
+                fxLayout="row"
+                class="events-list-edition-dialog-content"
+        >
+
+            <events-list
+                    fxFlex="40"
+                    [events]="events"
+                    (selectedEventChange)="setSelectedEvent($event)"
+            ></events-list>
+
+            <div class="events-list-item-container">
+                <ng-container *ngIf="!selectedEvent">
+                    Не выбран ивент
+                </ng-container>
+                <ng-container *ngIf="selectedEvent">
+                    <div mat-dialog-title>Карточка ивента</div>
+                    <event-form [currentEvent]="selectedEvent"></event-form>
+                </ng-container>
+            </div>
+
+        </div>
+
+        <div fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="end center">
+            <save-dialog-button
+                    [label]="'Сохранить'"
+                    *ngIf="selectedEvent"
+            ></save-dialog-button>
+            <close-dialog-button [label]="'Закрыть'"></close-dialog-button>
+        </div>
+
+    </ng-container>
+
+    <ng-template #waitingTemplate>
+        <waiting-template></waiting-template>
+    </ng-template>
+</div>
+

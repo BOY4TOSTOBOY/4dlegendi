@@ -1,0 +1,184 @@
+@import "../../../../assets/styles/constants.scss";
+
+@media (max-width: 415px) {
+  .header-container {
+    padding: 0 12px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    right: 0;
+    height: 54px;
+
+    .selected-menu-item {
+      color: $mat-light-gray;
+      background: $mat-light-primary;
+    }
+  }
+
+  .main-content-wrapper[_ngcontent-c1] a[_ngcontent-c1] {
+    height: 50px;
+    margin-right: 20px;
+    width: 98%;
+  }
+
+  // .matMe {
+  //   display: flex;
+  // }
+  // .menu {
+  //   display: none;
+  // }
+}
+
+@media (min-width: 320px) {
+  // .matMe {
+  //   display: none;
+  // }
+  // .menu {
+  //   display: flex;
+  // }
+
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-content-wrapper[_ngcontent-c1] a[_ngcontent-c1] {
+    height: 50px;
+    margin-right: 20px;
+    width: 94%;
+  }
+  #sidebarMenu {
+    height: 171px; /*change here related your menu height*/
+    position: fixed;
+    overflow: none;
+    width: 100%;
+    z-index: 100;
+    transform: translateY(-171px); /*change here related your menu height*/
+  }
+  .header-container {
+    padding: 0 12px;
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    right: 0;
+    height: 54px;
+
+    .selected-menu-item {
+      color: black;
+      background: white;
+    }
+  }
+
+  .main-content-wrapper a {
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: white;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid white;
+    color: black;
+    text-decoration: none;
+  }
+  #sidebarMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  #sidebarMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  #sidebarMenu::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #fff;
+    height: 50px;
+  }
+  .sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translatey(0);
+    top: 50px; /*change here related your top menu height*/
+  }
+  input[type="checkbox"] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    z-index: 99;
+    height: 22px;
+    width: 22px;
+    left: 10px;
+    top: 10px;
+    display: none;
+  }
+  .spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+  }
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    height: 2px;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  .diagonal.part-1 {
+    position: relative;
+    margin-bottom: 2px;
+    height: 2px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    margin-bottom: 2px;
+    height: 2px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+}

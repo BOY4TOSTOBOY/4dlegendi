@@ -1,0 +1,10 @@
+<div class="question-container" fxLayout="column">
+  <div fxFlex></div>
+  <div class="nameAll">
+    <p class="asks">{{ currentQuestion?.character_name }} спрашивает</p>
+  </div>
+  <p class="text">
+    {{ currentQuestion?.question }}
+    <img class="img" src="{{ currentQuestion?.link_to_the_profile_photo }}" />
+  </p>
+</div>

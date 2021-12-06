@@ -1,0 +1,132 @@
+.news {
+  max-height: 680px;
+  margin-top: 25%;
+}
+.icon {
+  cursor: pointer;
+}
+.spinner {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  .mat-progress-spinner {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 415px) {
+  .text {
+    margin: 20px 10px;
+    text-align: center;
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+
+    padding: 10px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.22);
+
+    &__total {
+      align-items: center;
+      display: flex;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .textNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #003366;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.22);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 414px) {
+  .text {
+    margin-bottom: 10px;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+
+    &__total {
+      align-items: center;
+      display: flex;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.22);
+    font-size: 14px;
+  }
+  .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .textNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #003366;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.22);
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

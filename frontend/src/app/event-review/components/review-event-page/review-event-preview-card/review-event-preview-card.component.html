@@ -1,0 +1,40 @@
+<mat-card
+		*ngIf="currentEvent"
+		class="review-event-card"
+>
+	<mat-card-title class="review-event-title">
+		{{ eventTitle }}
+	</mat-card-title>
+
+	<mat-card-content>
+		<div
+				fxLayout="row"
+				fxLayoutGap="6vw"
+				fxLayoutAlign="center center"
+				class="review-event-actions-panel"
+		>
+			<button
+					mat-flat-button
+					color="primary"
+					(click)="approveEvent.emit()"
+			>
+				Принять
+			</button>
+
+			<button
+					mat-flat-button
+					color="warn"
+					(click)="rejectEvent.emit()"
+			>
+				Отклонить
+			</button>
+			<button
+					mat-flat-button
+					color="accent"
+					(click)="goToEventList()"
+			>
+				Закончить
+			</button>
+		</div>
+	</mat-card-content>
+</mat-card>

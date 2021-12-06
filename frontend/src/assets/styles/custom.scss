@@ -1,0 +1,47 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.mat-form-field-appearance-outline{.mat-form-field-subscript-wrapper {
+  padding: 3px 1em !important;
+}}
+.full-width {
+  width: 100%;
+
+}
+
+.inline-button {
+  height: 53px !important;
+  margin-top: 3px !important;
+  font-size: 11px !important;
+
+}
+.pay{
+  height: 53px !important;
+  margin-top: 3px !important;
+
+}
+
+.inline-dialog-content-button {
+  height: 58px !important;
+  margin-top: 3px !important;
+}
+
+table, a, mat-table, button {
+  font-family: 'Montserrat', sans-serif !important;;
+}
+
+mat-header-row {
+  min-height: 56px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 0;
+}
+
+.mat-flat-button.mat-accent,
+.mat-raised-button.mat-accent,
+.mat-fab.mat-accent,
+.mat-mini-fab.mat-accent button {
+  color: white !important;
+}

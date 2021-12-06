@@ -1,0 +1,31 @@
+<div
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  fxFill
+  class="review-event-page"
+>
+  <ng-container *ngIf="!isApproveEventCardDisplayed">
+    <div class="content" *ngFor="let character of generateImg">
+      <p>{{ character.character_name }} говорит:</p>
+      <img class="img" src="{{ character.link_to_the_profile_photo }}" />
+      <p>Рекомендую подумать</p>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="currentEvent">
+    <review-event-preview-card
+      *ngIf="!isApproveEventCardDisplayed"
+      [currentEvent]="currentEvent"
+      (approveEvent)="isApproveEventCardDisplayed = true"
+      (rejectEvent)="rejectEvent()"
+    ></review-event-preview-card>
+
+    <review-event-approve-card
+      *ngIf="isApproveEventCardDisplayed"
+      [currentEvent]="currentEvent"
+      [eventTypes]="eventTypes"
+      (updateTitle)="updateTitle($event)"
+      (approveEvent)="approveEvent($event)"
+    >
+    </review-event-approve-card>
+  </ng-container>
+</div>

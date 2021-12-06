@@ -1,0 +1,64 @@
+<div class="answer-panel-container" fxLayout="column">
+  <div class="answer-panel-label" #answerParamsContainer>
+    Добавленные ответы (не менее
+    <span class="answer-panel-label-back-light"
+      >{{ requiredLength }} ответов</span
+    >). {{ test$$.value}}
+  </div>
+
+  <mat-form-field fxFlex="56px" appearance="outline" class="full-width">
+    <mat-label> Новый ответ </mat-label>
+
+    <input matInput [(ngModel)]="newAnswer" placeholder="Введите ответ..." />
+  </mat-form-field>
+
+  <div class="text-enter"><mat-hint>Для добавления ответа нажмите Enter или кнопку</mat-hint></div>
+  <div class="click">
+    <button class="btn" (click)="onKeyUp()">
+      <img
+        class="svg"
+        src="https://image.flaticon.com/icons/png/512/748/748113.png"
+      />
+    </button>
+  </div>
+  <div class="answer-panel-content">
+    <div *ngFor="let answer of answers" fxLayout="row" class="full-width">
+      <div fxFlex="calc(100% - 40px)" fxLayout="row">
+        <div class="answer-item" fxFlex="50">
+          {{ answer.text }}
+        </div>
+        <div
+          *ngIf="getErrorMessage(answer.id)"
+          class="answer-item error-item"
+          fxFlex="50"
+          [matTooltip]="getErrorMessage(answer.id)"
+          matTooltipPosition="left"
+        >
+          <span class="visible_on_desktop">{{
+            getErrorMessage(answer.id)
+          }}</span>
+          <span class="visible_on_mobile"
+            ><img
+              class="img"
+              src="https://image.flaticon.com/icons/png/512/4457/4457164.png"
+          /></span>
+        </div>
+      </div>
+
+      <button mat-icon-button color="warn" (click)="filterAnswers(answer)">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button
+      mat-stroked-button
+      color="primary"
+      class="btn1"
+      [disabled]="!answers || answers.length < requiredLength"
+      (click)="submitPollAnswer()"
+    >
+      Записать ответ
+    </button>
+  </div>
+</div>

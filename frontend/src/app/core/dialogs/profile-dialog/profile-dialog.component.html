@@ -1,0 +1,27 @@
+<ng-container>
+  <div class="profile">
+
+    <div class="name">{{ userProfile.username }}</div>
+    <div class="reset-password">
+<!--      <button class="btn">-->
+<!--        <div class="reset-password-label" (click)="resetPassword()">-->
+<!--          сбросить пароль?-->
+<!--        </div>-->
+<!--      </button>-->
+
+
+    </div>
+    <div class="">
+
+      <div>
+        <div class="text">подписка оформлена до</div>
+        <div class="namber">{{  userProfile.date_end | date:'dd-MM-yyyy hh:mm a'}}</div>
+      </div>
+    </div>
+
+    <div>
+      <!-- платежка -->
+      <a (click)="AfterPayment()"> <div class="pay">оплатить</div></a>
+    </div>
+  </div>
+</ng-container>

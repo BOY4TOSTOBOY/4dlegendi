@@ -1,0 +1,127 @@
+<form
+		*ngIf="eventForm"
+		class="event-form-container"
+		[formGroup]="eventForm"
+>
+	<ng-container *ngIf="currentEvent; else waitingTemplate">
+		<mat-form-field
+				appearance="outline"
+				class="full-width"
+		>
+			<mat-label>
+				Заголовок ивента
+			</mat-label>
+			<mat-select
+					formControlName="title"
+					placeholder="Выберите заголовок..."
+					[compareWith]="defaultEqual"
+					required
+			>
+				<mat-option *ngFor="let title of titles" [value]="title">
+					{{title.text}}
+				</mat-option>
+			</mat-select>
+			<mat-error
+					*ngIf="title.invalid"
+			>
+				{{getValidatorErrorMessage(title)}}
+			</mat-error>
+		</mat-form-field>
+
+		<mat-form-field appearance="outline" class="full-width">
+			<mat-label>
+				Описание ивента
+			</mat-label>
+			<mat-select
+					formControlName="description"
+					placeholder="Выберите описание..."
+					[compareWith]="defaultEqual"
+					required
+			>
+				<mat-option *ngFor="let template of templates" [value]="template">
+					{{template.text}}
+				</mat-option>
+			</mat-select>
+			<mat-error
+					*ngIf="description.invalid"
+			>
+				{{getValidatorErrorMessage(description)}}
+			</mat-error>
+		</mat-form-field>
+
+		<div
+				fxLayout="row"
+				fxLayoutGap="8px"
+		>
+			<mat-form-field
+					fxFlex="calc(50% - 4px)"
+					appearance="outline"
+			>
+				<mat-label>
+					Дата начала
+				</mat-label>
+				<input
+						matInput
+						placeholder="ДД.ММ.ГГГГ"
+						[matDatepicker]="startDatePicker"
+						[max]="end.value"
+						formControlName="start"
+						readonly
+				>
+				<mat-datepicker-toggle
+						matSuffix
+						[for]="startDatePicker"
+				></mat-datepicker-toggle>
+				<mat-datepicker #startDatePicker></mat-datepicker>
+			</mat-form-field>
+			<mat-form-field
+					fxFlex="calc(50% - 4px)"
+					appearance="outline"
+			>
+				<mat-label>
+					Дата окончания
+				</mat-label>
+				<input
+						matInput
+						placeholder="ДД.ММ.ГГГГ"
+						[matDatepicker]="endDatePicker"
+						[min]="start.value"
+						formControlName="end"
+						readonly
+				>
+				<mat-datepicker-toggle
+						matSuffix
+						[for]="endDatePicker"
+				></mat-datepicker-toggle>
+				<mat-datepicker #endDatePicker></mat-datepicker>
+			</mat-form-field>
+		</div>
+
+		<mat-form-field
+				appearance="outline"
+				class="full-width"
+		>
+			<mat-label>
+				Формат
+			</mat-label>
+			<mat-select
+					formControlName="color"
+					placeholder="Выберите формат..."
+					[compareWith]="colorEqual"
+					required
+			>
+				<mat-option
+						*ngFor="let key of objectKeys(eventTypes)"
+						[value]="eventTypes[key]"
+						[ngStyle]="getEventTypeFontColor(key)"
+				>
+					{{ eventTypes[key] | transformColorToText }}
+				</mat-option>
+			</mat-select>
+		</mat-form-field>
+	</ng-container>
+	<ng-template #waitingTemplate>
+		<waiting-template></waiting-template>
+	</ng-template>
+</form>
+

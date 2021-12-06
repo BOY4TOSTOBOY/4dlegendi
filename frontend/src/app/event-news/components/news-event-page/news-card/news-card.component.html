@@ -1,0 +1,67 @@
+<div class="newsList">
+  <div class="news-panel-container" fxLayout="column">
+    <div class="news-panel-label" #answerParamsContainer>
+      <h3 class="h3">Введите существительные для актуальной новости</h3>
+    </div>
+
+      {{ getTooltip() }}
+
+    <mat-form-field fxFlex="56px" appearance="outline" class="full-width">
+      <mat-label> Новое слово </mat-label>
+      <input matInput [(ngModel)]="text" placeholder="Введите ответ..." />
+    </mat-form-field>
+    <div class="text-enter"><mat-hint>Для добавления ответа нажмите Enter или кнопку</mat-hint></div>
+
+    <div class="click">
+      <button class="btn" (click)="onKeyUp()">
+        <img
+          class="svg"
+          src="https://image.flaticon.com/icons/png/512/748/748113.png"
+        />
+      </button>
+    </div>
+    <div class="news-panel-content">
+      <div *ngFor="let news of elements" fxLayout="row" class="full-width">
+        <div fxFlex="calc(100% - 40px)" fxLayout="row">
+          <div class="news-item" fxFlex="50">{{ news.text}}</div>
+          <div
+            *ngIf="getErrorMessage(news.id)"
+            class="news-item error-item"
+            fxFlex="50"
+            [matTooltip]="getErrorMessage(news.id)"
+            matTooltipPosition="left"
+          >
+            <span class="visible_on_desktop">{{ getErrorMessage(news.id) }}</span>
+            <span class="visible_on_mobile"
+              ><img
+                class="img"
+                src="https://image.flaticon.com/icons/png/512/4457/4457164.png"
+            /></span>
+          </div>
+        </div>
+
+        <button mat-icon-button color="warn" (click)="deleteNews(news)">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" class="transition">
+      <button
+        type="button"
+        mat-stroked-button
+        color="primary"
+        class="btn1"
+        (click)="checkingForATransition()"
+      >
+        Завершить редактирование
+      </button>
+      <button  type="button"
+               mat-stroked-button
+               color="primary"
+               class="btn1"
+               (click)="goToNews()">
+        вернуться
+      </button>
+    </div>
+  </div>
+</div>

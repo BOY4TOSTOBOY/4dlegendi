@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/constants.scss";
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: $mat-light-gray;
+  width: 60px;
+  margin-top: 54px;
+  overflow: visible;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+
+  a {
+    min-width: 0 !important;
+  }
+
+  .sidenav-icon {
+    padding-top: 16px;
+    height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .selected-menu-item {
+    background: rgba(0, 0, 0, 0.12);
+
+    mat-icon {
+      color: #3949ab;
+    }
+  }
+}

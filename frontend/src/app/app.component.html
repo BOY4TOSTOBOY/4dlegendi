@@ -1,0 +1,8 @@
+<legending-header></legending-header>
+<legendind-sidebar *ngIf="!isStateShouldBeWithoutSidebar()"></legendind-sidebar>
+<div
+  class="content-container with-sidebar"
+  [ngClass]="{ 'without-sidebar': isStateShouldBeWithoutSidebar() }"
+>
+  <ui-view></ui-view>
+</div>

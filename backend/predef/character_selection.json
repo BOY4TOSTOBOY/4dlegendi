@@ -1,0 +1,212 @@
+[
+{
+  "model": "legending.characterselection",
+  "pk": 0,
+  "fields": {
+    "id": 1,
+    "character_name": 4,
+    "question": 15,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 1,
+  "fields": {
+    "id": 2,
+    "character_name": 5,
+    "question": 16,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 2,
+  "fields": {
+    "id": 3,
+    "character_name": 1,
+    "question": 17,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 3,
+  "fields": {
+    "id": 4,
+    "character_name": 2,
+    "question": 18,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 4,
+  "fields": {
+    "id": 5,
+    "character_name": 0,
+    "question": 19,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 5,
+  "fields": {
+    "id": 6,
+    "character_name": 1,
+    "question": 20,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 6,
+  "fields": {
+    "id": 7,
+    "character_name": 6,
+    "question": 21,
+    "role": 3
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 7,
+  "fields": {
+    "id": 8,
+    "character_name": 4,
+    "question": 1,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 8,
+  "fields": {
+    "id": 9,
+    "character_name": 3,
+    "question": 2,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 9,
+  "fields": {
+    "id": 10,
+    "character_name": 2,
+    "question": 3,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 10,
+  "fields": {
+    "id": 11,
+    "character_name": 6,
+    "question": 4,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 11,
+  "fields": {
+    "id": 12,
+    "character_name": 0,
+    "question": 5,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 12,
+  "fields": {
+    "id": 13,
+    "character_name": 1,
+    "question": 6,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 13,
+  "fields": {
+    "id": 14,
+    "character_name": 5,
+    "question": 7,
+    "role": 1
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 14,
+  "fields": {
+    "id": 15,
+    "character_name": 4,
+    "question": 8,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 15,
+  "fields": {
+    "id": 16,
+    "character_name": 6,
+    "question": 9,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 16,
+  "fields": {
+    "id": 17,
+    "character_name": 3,
+    "question": 10,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 17,
+  "fields": {
+    "id": 18,
+    "character_name": 2,
+    "question": 11,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 18,
+  "fields": {
+    "id": 19,
+    "character_name": 0,
+    "question": 12,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 19,
+  "fields": {
+    "id": 20,
+    "character_name": 1,
+    "question": 13,
+    "role": 2
+  }
+},
+{
+  "model": "legending.characterselection",
+  "pk": 20,
+  "fields": {
+    "id": 21,
+    "character_name": 5,
+    "question": 14,
+    "role": 2
+  }
+}
+]

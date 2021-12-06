@@ -1,0 +1,160 @@
+<div
+  class="dashboard-page-container"
+  fxLayout="column"
+  fxLayoutGap="8px"
+  *ngIf="currentUser"
+>
+  <ng-container *ngIf="currentUser.is_generate">
+    <div fxLayout="row" class="full-width" fxLayoutAlign="space-between center">
+      <div fxLayout="row" fxLayoutGap="8px" class="dashboard-page-header">
+        <button
+          mat-icon-button
+          mwlCalendarPreviousView
+          [view]="view"
+          [(viewDate)]="viewDate"
+          (viewDateChange)="closeOpenMonthViewDay()"
+        >
+          <mat-icon> arrow_back </mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          mwlCalendarToday
+          (viewDateChange)="closeOpenMonthViewDay()"
+          [(viewDate)]="viewDate"
+        >
+          <mat-icon> history </mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          mwlCalendarNextView
+          [view]="view"
+          [(viewDate)]="viewDate"
+          (viewDateChange)="closeOpenMonthViewDay()"
+        >
+          <mat-icon> arrow_forward </mat-icon>
+        </button>
+        <div class="dashboard-current-entity-label">
+          {{
+            getRussianMonth(viewDate | calendarDate: view + "ViewTitle":"en")
+          }}
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="8px" *ngIf="isModeSelectionEnabled">
+        <button
+          mat-stroked-button
+          (click)="setView(CalendarView.Month)"
+          [ngClass]="isViewSelected(CalendarView.Month)"
+        >
+          Месяц
+        </button>
+        <button
+          mat-stroked-button
+          (click)="setView(CalendarView.Week)"
+          [ngClass]="isViewSelected(CalendarView.Week)"
+        >
+          Неделя
+        </button>
+        <button
+          mat-stroked-button
+          (click)="setView(CalendarView.Day)"
+          [ngClass]="isViewSelected(CalendarView.Day)"
+        >
+          День
+        </button>
+      </div>
+    </div>
+
+    <div
+      fxLayout="row"
+      fxLayoutGap="8px"
+      fxLayoutAlign="end center"
+      class="dashboard-day-info-container"
+      fxFlex="36px"
+    >
+      <ng-container *ngIf="selectedDay">
+        <span>
+          На этот день запланировано {{ selectedDay.events.length }} ивента(-ов)
+        </span>
+        <button mat-stroked-button color="primary" (click)="openEventDialog()">
+          Добавить ивент
+        </button>
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="events$ | async as events">
+      <div [ngSwitch]="view">
+        <mwl-calendar-month-view
+          *ngSwitchCase="CalendarView.Month"
+          [viewDate]="viewDate"
+          [events]="events"
+          [weekStartsOn]="1"
+          [refresh]="refresh"
+          [headerTemplate]="headerTemplate"
+          [activeDayIsOpen]="activeDayIsOpen"
+          (dayClicked)="dayClicked($event.day)"
+          (eventClicked)="openEventDialog($event.event)"
+        >
+        </mwl-calendar-month-view>
+
+        <ng-template #headerTemplate let-days="days">
+          <div fxLayout="row" class="full-width">
+            <div
+              fxFlex="calc(100% / 7)"
+              class="custom-cal-header"
+              *ngFor="let day of days"
+            >
+              {{
+                getRussianWeekday(
+                  day.date | calendarDate: "weekViewColumnHeader":"en"
+                )
+              }}
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <ng-container *ngIf="!currentUser.is_generate">
+    <div
+      *ngIf="!isPollStarted && !isPollCompleted"
+      class="poll-container"
+      fxLayout="column"
+      fxLayoutGap="36px"
+      fxLayoutAlign="center center"
+    >
+      <div class="poll-container-label">
+        Для продолжения работы необходимо пройти опрос
+      </div>
+      <button mat-stroked-button color="primary" (click)="startPoll()">
+        Начать
+      </button>
+    </div>
+
+    <div
+      *ngIf="isPollStarted && !isPollCompleted"
+      class="poll-container"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+    >
+      <question-container
+        class="poll-container-content mat-elevation"
+        *ngIf="isPollStarted && !isPollCompleted && currentQuestion"
+        [currentQuestion]="currentQuestion.text"
+        [requiredLength]="currentQuestion.min_answers"
+        [criteria]="currentQuestion.criteria"
+        [errors]="errors"
+        (updatePollAnswer)="acceptPollAnswer($event)"
+      ></question-container>
+    </div>
+
+    <div
+      *ngIf="isPollCompleted"
+      class="poll-container"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+    >
+      <waiting-template></waiting-template>
+    </div>
+  </ng-container>
+</div>

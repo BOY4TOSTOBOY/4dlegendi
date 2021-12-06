@@ -1,0 +1,72 @@
+[
+{
+  "model": "legending.character",
+  "pk": 0,
+  "fields": {
+    "id": 0,
+    "character_name": "Мухаммед Али",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Ali.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 1,
+  "fields": {
+    "id": 1,
+    "character_name": "Василий Иванович Чапаев",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Chapaev.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 2,
+  "fields": {
+    "id": 2,
+    "character_name": "Антон Павлович Чехов",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Chekhov.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 3,
+  "fields": {
+    "id": 3,
+    "character_name": "Альберт Эйнштейн",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Einstein.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 4,
+  "fields": {
+    "id": 4,
+    "character_name": "Зигмунд Фрейд",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Freud.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 5,
+  "fields": {
+    "id": 5,
+    "character_name": "Махатма Ганди",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Gandhi.png"
+  }
+},
+{
+  "model": "legending.character",
+  "pk": 6,
+  "fields": {
+    "id": 6,
+    "character_name": "Исаак Ньютон",
+    "gender": "Мужской",
+    "link_to_the_profile_photo": "/assets/images/philo/Newton.png"
+  }
+}
+]

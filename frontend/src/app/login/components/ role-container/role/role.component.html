@@ -1,0 +1,24 @@
+<mat-card class="poll-card-container text">
+  <mat-card-content
+    class="poll-card-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+  >
+    <p class="text">Ваша медийная роль ?</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="poll-card-container">
+  <mat-card-content
+    class="poll-card-content"
+    fxLayout="column"
+    fxLayoutGap="12px"
+    fxLayoutAlign="center center"
+  >
+    <div class="buttons" *ngFor="let role of pollListRole">
+      <button class="btn" mat-stroked-button (click)="startPoll(role.id)">
+        {{ role.name }}
+      </button>
+    </div></mat-card-content
+  >
+</mat-card>

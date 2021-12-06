@@ -1,0 +1,33 @@
+<div class="events-list-container" *ngIf="events">
+  <ng-container *ngIf="events.length">
+    <div
+            class="event-item-container"
+            *ngFor="let event of events"
+            (click)="selectEvent(event)"
+            [ngClass]="isEventSelected(event)"
+            fxLayout="row"
+            fxLayoutGap="8px"
+            fxLayoutAlign="start center">
+      <div class="event-item-text-container" fxFlex="calc(100% - 40px)">
+        {{ event.title }}
+      </div>
+      <button
+              mat-icon-button
+              color="accent"
+              matTooltip="Удалить ивент"
+              *ngIf="event === selectedEvent"
+              (click)="removeEvent(event)"
+      >
+        <mat-icon>
+          close
+        </mat-icon>
+      </button>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!events.length">
+    <div class="event-item-container">
+      Нет элементов для отображения
+    </div>
+  </ng-container>
+</div>

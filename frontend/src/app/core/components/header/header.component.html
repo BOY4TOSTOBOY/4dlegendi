@@ -1,0 +1,66 @@
+<mat-toolbar
+  class="header-container mat-elevation-z6"
+  fxLayout="row"
+  fxLayoutGap="12px"
+  fxLayoutAlign="start center"
+  color="primary"
+>
+  <div class="menu" fxHide.xs>
+    <ng-container *ngFor="let headerItem of headerItems">
+      <a
+        *ngIf="headerItem.visibleIf()"
+        mat-button
+        (click)="headerItem.action()"
+        [uiSref]="headerItem.url"
+        [ngClass]="headerItem.isSelected()"
+      >
+        {{ headerItem.label }}
+      </a>
+    </ng-container>
+  </div>
+
+  <a
+    mat-icon-button
+    class="matMe"
+    [matMenuTriggerFor]="ActionsMenu"
+    fxHide.gt-xs
+  >
+    <mat-icon>reorder</mat-icon>
+  </a>
+
+  <mat-menu #ActionsMenu="matMenu">
+    <div class="main-content-wrapper">
+      <ng-container *ngFor="let headerItem of headerItems">
+        <a
+          *ngIf="headerItem.visibleIf()"
+          mat-button
+          [uiSref]="headerItem.url"
+          [ngClass]="headerItem.isSelected()"
+          (click)="headerItem.action()"
+        >
+          {{ headerItem.label }}
+        </a>
+      </ng-container>
+    </div>
+  </mat-menu>
+
+  <div fxFlex></div>
+
+  <a mat-icon-button [matMenuTriggerFor]="headerActionsMenu">
+    <mat-icon> more_vert </mat-icon>
+  </a>
+
+  <mat-menu #headerActionsMenu="matMenu">
+    <button
+      *ngFor="let item of headerMenuActions"
+      mat-menu-item
+      (click)="item.action()"
+    >
+      <mat-icon>
+        {{ item.icon }}
+      </mat-icon>
+      {{ item.label }}
+    </button>
+  </mat-menu>
+</mat-toolbar>
+

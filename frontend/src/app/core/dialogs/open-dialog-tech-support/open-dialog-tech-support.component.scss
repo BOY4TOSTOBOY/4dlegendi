@@ -1,0 +1,180 @@
+@import "../../../../assets/styles/constants.scss";
+
+@media (max-width: 414px) {
+  input{
+    border: 1px solid #cccccc; //цвет рамки
+    border-radius: 3px; //закругление углов (общее)
+    -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+    -moz-border-radius: 3px; //закругление углов (FireFox)
+    -khtml-border-radius: 3px; //закругление углов (Safari)
+    background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+    outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+    height: 25px; // высота на свое усмотрение
+    width: 240px; // ширина на свое усмотрение
+    color: #000; //цвет шрифта в обычном состоянии
+    font-size: 13px; // Размер шрифта
+    font-family: Tahoma; // Стиль шрифта
+
+  }
+  textarea{
+    resize: none;
+    height: 200px;
+    width: 240px;
+    border: 1px solid #cccccc; //цвет рамки
+    border-radius: 3px; //закругление углов (общее)
+    -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+    -moz-border-radius: 3px; //закругление углов (FireFox)
+    -khtml-border-radius: 3px; //закругление углов (Safari)
+    background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+    color: #000; //цвет шрифта в обычном состоянии
+    font-size: 13px; // Размер шрифта
+    font-family: Tahoma; // Стиль шрифта
+
+  }
+
+  .heard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bn632-hover {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .bn632-hover:focus {
+    outline: none;
+  }
+
+  .bn632-hover.bn23 {
+    background-image: linear-gradient(
+                    to right,
+                    $mat-light-primary,
+                    $mat-light-primary,
+                    #009245,
+                    #d9e021
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+  }
+}
+@media (min-width: 415px) {
+  input{
+    border: 1px solid #cccccc; //цвет рамки
+    border-radius: 3px; //закругление углов (общее)
+    -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+    -moz-border-radius: 3px; //закругление углов (FireFox)
+    -khtml-border-radius: 3px; //закругление углов (Safari)
+    background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+    outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+    height: 25px; // высота на свое усмотрение
+    width: 400px; // ширина на свое усмотрение
+    color:  #000; //цвет шрифта в обычном состоянии
+    font-size: 13px; // Размер шрифта
+    font-family: Tahoma; // Стиль шрифта
+  }
+  .question{
+    height: 100px; // высота на свое усмотрение
+    width: 400px; // ширина на свое усмотрение
+  }
+  textarea{
+    resize: none;
+    height: 260px; // высота на свое усмотрение
+    width: 400px; // ширина на свое усмотрение
+    border: 1px solid #cccccc; //цвет рамки
+    border-radius: 3px; //закругление углов (общее)
+    -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+    -moz-border-radius: 3px; //закругление углов (FireFox)
+    -khtml-border-radius: 3px; //закругление углов (Safari)
+    background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+    color: #000; //цвет шрифта в обычном состоянии
+    font-size: 13px; // Размер шрифта
+    font-family: Tahoma; // Стиль шрифтаS
+  }
+  .heard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .bn632-hover:focus {
+    outline: none;
+  }
+
+  .bn632-hover.bn23 {
+    background-image: linear-gradient(
+      to right,
+      $mat-light-primary,
+      $mat-light-primary,
+      #009245,
+      #d9e021
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+  }
+
+  .alert-message {
+    align-items: center;
+    background: #FF0000;
+    border-radius: 2px;
+    display: flex;
+    font-size: 12px;
+    height: 20px;
+    opacity: 0.5;
+    padding-left: 5px;
+
+    p {
+      color: #000000;
+      font-weight: 600;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<h1 mat-dialog-title>Регистрация</h1>
+<form mat-dialog-content [formGroup]="registrationForm" (submit)="onSubmit()">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> Имя </mat-label>
+    <input
+      matInput
+      formControlName="first_name"
+      placeholder="Введите имя"
+      required
+    />
+    <mat-error *ngIf="first_name.invalid">
+      {{ getValidatorErrorMessage(first_name) }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> Фамилия </mat-label>
+    <input
+      matInput
+      formControlName="last_name"
+      placeholder="Введите фамилию"
+      required
+    />
+    <mat-error *ngIf="last_name.invalid">
+      {{ getValidatorErrorMessage(last_name) }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> E-mail </mat-label>
+    <input
+      matInput
+      formControlName="email"
+      placeholder="Введите email"
+      required
+    />
+    <mat-error *ngIf="email.invalid">
+      {{ getValidatorErrorMessage(email) }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> Логин </mat-label>
+    <input
+      matInput
+      formControlName="username"
+      placeholder="Введите логин"
+      required
+    />
+    <mat-error *ngIf="username.invalid">
+      {{ getValidatorErrorMessage(username) }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> Пароль </mat-label>
+    <input
+      matInput
+      formControlName="password"
+      placeholder="Введите пароль"
+      type="password"
+      required
+    />
+    <mat-error *ngIf="password.invalid">
+      {{ getValidatorErrorMessage(password) }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label> Пароль повторно </mat-label>
+    <input
+      matInput
+      formControlName="confirm_password"
+      placeholder="Введите пароль повторно"
+      type="password"
+      required
+    />
+    <mat-hint *ngIf="!isPasswordsEqual()">
+      Введенные пароли не совпадают
+    </mat-hint>
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutGap="8px">
+    <div fxFlex></div>
+    <div class="spinner">
+      <mat-spinner *ngIf="isLoading" [diameter]="30"></mat-spinner>
+    </div>
+    <button
+      mat-stroked-button
+      color="primary"
+      type="submit"
+      [disabled]="registrationForm.invalid || !isPasswordsEqual()"
+    >
+      Сохранить
+    </button>
+
+    <close-dialog-button [label]="'Отмена'"></close-dialog-button>
+  </div>
+</form>

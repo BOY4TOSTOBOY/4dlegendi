@@ -1,0 +1,26 @@
+<div class="content" *ngIf="!isLoading">
+  <ul class="list" *ngIf="test$ | async as questions; else loading">
+  <li (click)="goToQuestion(question)" class="text" *ngFor="let question of questions">
+    <a>
+      {{ question.question }}
+    </a>
+  </li>
+</ul>
+  <div class="content">
+    <div class="btn">
+    <button type="submit" class="bn632-hover bn23" (click)="PoolAnswers()">Сгенерировать темы</button>
+    </div>
+  </div>
+<ng-template class="loading" #loading> Loading... </ng-template>
+</div>
+
+
+<div   class="content" fxLayout="row" fxLayoutAlign="center center" *ngIf="isLoading">
+  <ng-container class="spinner" >
+    <div>
+      Подождите пару секунд
+    </div>
+
+    <mat-spinner [diameter]="50"></mat-spinner>
+  </ng-container>
+</div>

@@ -1,0 +1,71 @@
+<mat-card
+		*ngIf="eventForm"
+		[formGroup]="eventForm"
+		class="review-event-card"
+>
+	<mat-card-content>
+		<mat-form-field
+				appearance="outline"
+				class="full-width"
+		>
+			<mat-label>
+				Заголовок
+			</mat-label>
+			<input
+					matInput
+					formControlName="title"
+					required
+			>
+		</mat-form-field>
+
+		<mat-form-field
+				appearance="outline"
+				class="full-width"
+		>
+			<mat-label>
+				Что мы хотим от аудитории
+			</mat-label>
+			<mat-select
+					formControlName="description"
+					placeholder="Выберите тип..."
+					[compareWith]="defaultEqual"
+					required
+			>
+				<mat-option *ngFor="let type of eventTypes" [value]="type">
+					{{type.text}}
+				</mat-option>
+			</mat-select>
+		</mat-form-field>
+
+		<mat-form-field
+				appearance="outline"
+				class="full-width"
+		>
+			<mat-label>
+				Комментарий
+			</mat-label>
+			<textarea
+					matInput
+					placeholder="Введите комментарий..."
+					formControlName="comment"
+					matAutosizeMinRows="3"
+					matAutosizeMaxRows="3"
+					matTextareaAutosize
+			></textarea>
+		</mat-form-field>
+
+		<div
+				fxLayout="row"
+				fxLayoutAlign="center center"
+				class="review-event-actions-panel"
+		>
+			<button
+					mat-flat-button
+					color="primary"
+					(click)="submit()"
+			>
+				Сохранить и перейти к следующей теме
+			</button>
+		</div>
+	</mat-card-content>
+</mat-card>
